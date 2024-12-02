@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { Injectable } from "@angular/core";
 @Injectable()
 export class WebService{
@@ -19,8 +19,6 @@ export class WebService{
     return this.http.get<any>('http://localhost:5000/api/v1.0/episodes/' +
       id + '/trivias');
   }
-
-
   postTrivia(id: any, trivia: any) {
       let postData = new FormData();
       postData.append("text", trivia.trivia);
@@ -28,4 +26,16 @@ export class WebService{
         'http://localhost:5000/api/v1.0/episodes/' +
         id + "/trivias", postData);
     }
+
+  login(creds: any) {
+    let authData = 'Basic ' + btoa(creds.username + ':' + creds.password);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'authorization': authData
+      })
+    };
+    return this.http.get<any>('http://localhost:5000/api/v1.0/login',
+      httpOptions)
   }
+}
