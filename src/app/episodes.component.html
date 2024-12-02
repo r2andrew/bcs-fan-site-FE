@@ -6,7 +6,7 @@
         <div class="card text-white bg-primary mb-3"
              style = "cursor: pointer"
              [routerLink] = "['/episodes',
-                                episode._id.$oid]">
+                                episode._id]">
           <div class="card-header">
             {{ episode.title }}
           </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="col-sm-4 text-center align-self-center">
       Showing page {{ this.page }}
-      of {{ this.dataService.getLastPageNumber() }}
+      of {{ this.totalPages }}
     </div>
     <div class="col-sm-4 text-end">
       <button class="btn btn-primary"

@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { DataService } from './data.service';
 import { CommonModule } from '@angular/common';
 import { WebService } from './web.service';
+import jsonData from '../assets/episodes.json';
 
 
 @Component({
@@ -18,6 +19,8 @@ export class EpisodesComponent {
   episodes_list: any;
   page: number = 1;
   pageSize: number = 3;
+  totalPages: number = 1;
+
 
   protected readonly Math = Math;
   constructor(public dataService: DataService,
@@ -28,7 +31,7 @@ export class EpisodesComponent {
       this.page = Number(sessionStorage['page']);
     }
 
-    this.webService.getEpisodes(this.page)
+    this.webService.getEpisodes()
       .subscribe((response) => {
         this.data = response['data']
 
@@ -36,6 +39,7 @@ export class EpisodesComponent {
         let pageEnd = pageStart + this.pageSize;
 
         this.episodes_list = this.data.slice(pageStart, pageEnd)
+        this.totalPages = Math.ceil( this.data.length / this.pageSize )
       })
   }
 
@@ -52,7 +56,7 @@ export class EpisodesComponent {
     }
   }
   nextPage() {
-    if (this.page < this.dataService.getLastPageNumber()) {
+    if (this.page < this.totalPages) {
       this.page = this.page + 1
       sessionStorage['page'] = this.page;
 
