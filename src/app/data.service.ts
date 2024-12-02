@@ -30,5 +30,23 @@ export class DataService {
     return dataToReturn;
   }
 
+  postTrivia(id: any, trivia: any) {
+    let newReview = {
+      'text' : trivia.trivia,
+      'user' : 'fakeUser',
+      'createdDtm': {'$date': 'fake'},
+      'modifiedDtm': {'$date': 'fake'},
+      '_id': {'$oid': 'fake'},
+      'upvotes': [],
+      'downvotes': []
+    };
+    jsonData.forEach( function(episode) {
+      if ( episode['_id']['$oid'] == id ) {
+        episode['trivias'].push( newReview );
+      }
+    });
+  }
+
+
 
 }
