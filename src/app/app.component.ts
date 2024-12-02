@@ -12,8 +12,4 @@ import { NavComponent } from './nav.component'
 })
 export class AppComponent {
   title = 'bcsFanSiteFE';
-
-  ngOnInit() {
-    console.log(jsonData)
-  }
 }
