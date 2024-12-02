@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      @for(business of business_list;
+        track business.name) {
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header">
+            {{ business.name }}
+          </div>
+          <div class="card-body">
+            This business is based in
+            {{ business.town }}
+          </div>
+          <div class="card-footer">
+            Rating: {{ business.rating }}
+          </div>
+        </div>
+      }
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- container -->
