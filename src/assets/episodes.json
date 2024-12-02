@@ -1,0 +1,4516 @@
+[{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08460f"
+	},
+	"airDate": "2015-03-23",
+	"episodeNumber": 8,
+	"seasonNumber": 1,
+	"imdbRating": 8.3,
+	"title": "RICO",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e93"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.731Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.731Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "You can see the cameramans reflection at 38:17",
+			"upvotes": [
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e94"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.731Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.731Z"
+			},
+			"user": "yupyupyup",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e95"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"kabylake",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084610"
+	},
+	"airDate": "2015-03-09",
+	"episodeNumber": 6,
+	"seasonNumber": 1,
+	"imdbRating": 8.7,
+	"title": "Five-O",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e96"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"user": "yupyupyup",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e97"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"user": "RealLawyer420",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [],
+			"downvotes": [
+				"SlippinJimmy",
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"kabylake",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e98"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.732Z"
+			},
+			"user": "HuellsRulez",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"kabylake",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e99"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"user": "yupyupyup",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084611"
+	},
+	"airDate": "2015-04-06",
+	"episodeNumber": 10,
+	"seasonNumber": 1,
+	"imdbRating": 8.2,
+	"title": "Marco",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084612"
+	},
+	"airDate": "2015-02-23",
+	"episodeNumber": 4,
+	"seasonNumber": 1,
+	"imdbRating": 8.0,
+	"title": "Hero",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9b"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9c"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.733Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"yupyupyup",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084613"
+	},
+	"airDate": "2015-03-30",
+	"episodeNumber": 9,
+	"seasonNumber": 1,
+	"imdbRating": 8.8,
+	"title": "Pimento",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9d"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"kabylake",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9e"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230e9f"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"HuellsRulez",
+				"kabylake"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084614"
+	},
+	"airDate": "2015-02-09",
+	"episodeNumber": 2,
+	"seasonNumber": 1,
+	"imdbRating": 8.4,
+	"title": "Mijo",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.734Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"kabylake"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [],
+			"downvotes": [
+				"RealLawyer420",
+				"SlippinJimmy",
+				"kabylake",
+				"yupyupyup",
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084615"
+	},
+	"airDate": "2015-02-08",
+	"episodeNumber": 1,
+	"seasonNumber": 1,
+	"imdbRating": 8.3,
+	"title": "Uno",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084616"
+	},
+	"airDate": "2016-04-04",
+	"episodeNumber": 8,
+	"seasonNumber": 2,
+	"imdbRating": 8.0,
+	"title": "Fifi",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.735Z"
+			},
+			"user": "kabylake",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"user": "kabylake",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"user": "kabylake",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"user": "kabylake",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"HuellsRulez",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084617"
+	},
+	"airDate": "2016-03-21",
+	"episodeNumber": 6,
+	"seasonNumber": 2,
+	"imdbRating": 8.0,
+	"title": "Bali Ha'i",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.736Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "You can see the cameramans reflection at 22:37",
+			"upvotes": [
+				"kabylake"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"SlippinJimmy",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ea9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eaa"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"user": "kabylake",
+			"text": "Check out 9:0 for a surprise!",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eab"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.737Z"
+			},
+			"user": "kabylake",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084618"
+	},
+	"airDate": "2016-03-28",
+	"episodeNumber": 7,
+	"seasonNumber": 2,
+	"imdbRating": 8.1,
+	"title": "Inflatable",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eac"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ead"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"user": "kabylake",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084619"
+	},
+	"airDate": "2016-04-18",
+	"episodeNumber": 10,
+	"seasonNumber": 2,
+	"imdbRating": 8.5,
+	"title": "Klick",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eae"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.738Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eaf"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"kabylake",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461a"
+	},
+	"airDate": "2016-04-11",
+	"episodeNumber": 9,
+	"seasonNumber": 2,
+	"imdbRating": 8.8,
+	"title": "Nailed",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Check out 30:50 for a surprise!",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461b"
+	},
+	"airDate": "2016-03-14",
+	"episodeNumber": 5,
+	"seasonNumber": 2,
+	"imdbRating": 7.7,
+	"title": "Rebecca",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Check out 14:51 for a surprise!",
+			"upvotes": [],
+			"downvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.739Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"HuellsRulez",
+				"yupyupyup",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461c"
+	},
+	"airDate": "2016-03-07",
+	"episodeNumber": 4,
+	"seasonNumber": 2,
+	"imdbRating": 8.4,
+	"title": "Gloves Off",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.74Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461d"
+	},
+	"airDate": "2015-02-16",
+	"episodeNumber": 3,
+	"seasonNumber": 1,
+	"imdbRating": 8.3,
+	"title": "Nacho",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"yupyupyup",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"user": "yupyupyup",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eb9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"kabylake"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eba"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.741Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"kabylake",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461e"
+	},
+	"airDate": "2015-03-02",
+	"episodeNumber": 5,
+	"seasonNumber": 1,
+	"imdbRating": 8.1,
+	"title": "Alpine Shepherd Boy",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ebb"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Check out 45:30 for a surprise!",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ebc"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Check out 26:53 for a surprise!",
+			"upvotes": [
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ebd"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"kabylake"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08461f"
+	},
+	"airDate": "2016-02-29",
+	"episodeNumber": 3,
+	"seasonNumber": 2,
+	"imdbRating": 8.0,
+	"title": "Amarillo",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ebe"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.742Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"HuellsRulez",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ebf"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"user": "yupyupyup",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"RealLawyer420",
+				"kabylake",
+				"SlippinJimmy",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084620"
+	},
+	"airDate": "2015-03-16",
+	"episodeNumber": 7,
+	"seasonNumber": 1,
+	"imdbRating": 8.2,
+	"title": "Bingo",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.743Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Check out 45:29 for a surprise!",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"RealLawyer420",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Check out 24:17 for a surprise!",
+			"upvotes": [],
+			"downvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"RealLawyer420",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.744Z"
+			},
+			"user": "kabylake",
+			"text": "You can see the cameramans reflection at 49:51",
+			"upvotes": [
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084621"
+	},
+	"airDate": "2016-02-22",
+	"episodeNumber": 2,
+	"seasonNumber": 2,
+	"imdbRating": 8.1,
+	"title": "Cobbler",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"user": "yupyupyup",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"SlippinJimmy",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"user": "yupyupyup",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"kabylake",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"SlippinJimmy",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"SlippinJimmy",
+				"yupyupyup",
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084622"
+	},
+	"airDate": "2016-02-15",
+	"episodeNumber": 1,
+	"seasonNumber": 2,
+	"imdbRating": 7,
+	"title": "Switch",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ec9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.745Z"
+			},
+			"user": "yupyupyup",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"RealLawyer420",
+				"HuellsRulez",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eca"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"user": "HuellsRulez",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"kabylake",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"SlippinJimmy",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ecb"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ecc"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"RealLawyer420",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "672640726145eb9133c86c6a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:08:34.329Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:08:37.452Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "secret at 1:02",
+			"downvotes": [
+				"RealLawyer420"
+			],
+			"upvotes": [
+				"kabylake",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67267351520f44ec794ca09d"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T18:45:37.168Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T19:02:26.436Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "secret at 1:02"
+		},
+		{
+			"_id": {
+				"$oid": "67267ab2043db6aac013c44a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T19:17:06.181Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T19:17:06.181Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "fun fact 2",
+			"upvotes": [
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67267cdd7a75b9c812cdcd1e"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T19:26:21.607Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T19:26:21.607Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "fun fact 10"
+		},
+		{
+			"_id": {
+				"$oid": "6728a000212c4e1c9237b031"
+			},
+			"createdDtm": {
+				"$date": "2024-11-04T10:20:48.454Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-04T10:20:58.252Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "secret at 1:02",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "6728a323212c4e1c9237b032"
+			},
+			"createdDtm": {
+				"$date": "2024-11-04T10:34:11.772Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-04T10:34:17.94Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "secret at 1:02",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084623"
+	},
+	"airDate": "2017-06-19",
+	"episodeNumber": 10,
+	"seasonNumber": 3,
+	"imdbRating": 8.8,
+	"title": "Lantern",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ecd"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"user": "yupyupyup",
+			"text": "You can see the cameramans reflection at 46:27",
+			"upvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ece"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.746Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"HuellsRulez",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ecf"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"kabylake",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084624"
+	},
+	"airDate": "2017-05-22",
+	"episodeNumber": 7,
+	"seasonNumber": 3,
+	"imdbRating": 8.1,
+	"title": "Expenses",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Check out 21:52 for a surprise!",
+			"upvotes": [
+				"kabylake"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.747Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"RealLawyer420",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084625"
+	},
+	"airDate": "2017-06-12",
+	"episodeNumber": 9,
+	"seasonNumber": 3,
+	"imdbRating": 8.6,
+	"title": "Fall",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Check out 19:49 for a surprise!",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"user": "kabylake",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084626"
+	},
+	"airDate": "2017-05-15",
+	"episodeNumber": 6,
+	"seasonNumber": 3,
+	"imdbRating": 8.3,
+	"title": "Off Brand",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.748Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"kabylake"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084627"
+	},
+	"airDate": "2017-05-08",
+	"episodeNumber": 5,
+	"seasonNumber": 3,
+	"imdbRating": 9.3,
+	"title": "Chicanery",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"RealLawyer420",
+				"yupyupyup",
+				"kabylake"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ed9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"user": "yupyupyup",
+			"text": "The setting plays a crucial role, reflecting the characters' personal and professional struggles.",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084628"
+	},
+	"airDate": "2017-04-24",
+	"episodeNumber": 3,
+	"seasonNumber": 3,
+	"imdbRating": 8.3,
+	"title": "Sunk Costs",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eda"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.749Z"
+			},
+			"user": "kabylake",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230edb"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"user": "kabylake",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230edc"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"user": "kabylake",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230edd"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"user": "RealLawyer420",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [
+				"HuellsRulez",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084629"
+	},
+	"airDate": "2017-05-01",
+	"episodeNumber": 4,
+	"seasonNumber": 3,
+	"imdbRating": 8.5,
+	"title": "Sabrosito",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ede"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.75Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230edf"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"kabylake",
+				"yupyupyup",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"user": "HuellsRulez",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462a"
+	},
+	"airDate": "2017-04-17",
+	"episodeNumber": 2,
+	"seasonNumber": 3,
+	"imdbRating": 8.6,
+	"title": "Witness",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"user": "kabylake",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup",
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.751Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"kabylake",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462b"
+	},
+	"airDate": "2018-10-08",
+	"episodeNumber": 10,
+	"seasonNumber": 4,
+	"imdbRating": 9.3,
+	"title": "Winner",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"RealLawyer420",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"kabylake",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462c"
+	},
+	"airDate": "2017-04-10",
+	"episodeNumber": 1,
+	"seasonNumber": 3,
+	"imdbRating": 8.1,
+	"title": "Mabel",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.752Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462d"
+	},
+	"airDate": "2018-10-01",
+	"episodeNumber": 9,
+	"seasonNumber": 4,
+	"imdbRating": 9.0,
+	"title": "Wiedersehen",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"yupyupyup",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Check out 21:19 for a surprise!",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"kabylake",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462e"
+	},
+	"airDate": "2018-09-17",
+	"episodeNumber": 7,
+	"seasonNumber": 4,
+	"imdbRating": 8.3,
+	"title": "Something Stupid",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ee9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.753Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Check out 16:22 for a surprise!",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"yupyupyup",
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eea"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"HuellsRulez",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eeb"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"user": "HuellsRulez",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08462f"
+	},
+	"airDate": "2017-06-05",
+	"episodeNumber": 8,
+	"seasonNumber": 3,
+	"imdbRating": 8.3,
+	"title": "Slip",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eec"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"user": "kabylake",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eed"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.754Z"
+			},
+			"user": "yupyupyup",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [],
+			"downvotes": [
+				"RealLawyer420",
+				"HuellsRulez",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eee"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"user": "RealLawyer420",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eef"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084630"
+	},
+	"airDate": "2018-09-24",
+	"episodeNumber": 8,
+	"seasonNumber": 4,
+	"imdbRating": 8.6,
+	"title": "Coushatta",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef0"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"HuellsRulez",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084631"
+	},
+	"airDate": "2018-09-10",
+	"episodeNumber": 6,
+	"seasonNumber": 4,
+	"imdbRating": 8.4,
+	"title": "Piñata",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef1"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.755Z"
+			},
+			"user": "yupyupyup",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef2"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"user": "kabylake",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"yupyupyup",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef3"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"user": "yupyupyup",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef4"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.756Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"HuellsRulez",
+				"RealLawyer420",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084632"
+	},
+	"airDate": "2018-09-03",
+	"episodeNumber": 5,
+	"seasonNumber": 4,
+	"imdbRating": 8.4,
+	"title": "Quite a Ride",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef5"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"kabylake",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef6"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"user": "HuellsRulez",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef7"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"user": "kabylake",
+			"text": "This episode was filmed over the course of just one day",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084633"
+	},
+	"airDate": "2018-08-27",
+	"episodeNumber": 4,
+	"seasonNumber": 4,
+	"imdbRating": 8.1,
+	"title": "Talk",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef8"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.757Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"kabylake"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230ef9"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230efa"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "You can see the cameramans reflection at 38:9",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230efb"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084634"
+	},
+	"airDate": "2018-08-06",
+	"episodeNumber": 1,
+	"seasonNumber": 4,
+	"imdbRating": 8.1,
+	"title": "Smoke",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230efc"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.758Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084635"
+	},
+	"airDate": "2018-08-13",
+	"episodeNumber": 2,
+	"seasonNumber": 4,
+	"imdbRating": 8.5,
+	"title": "Breathe",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230efd"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"kabylake"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230efe"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084636"
+	},
+	"airDate": "2020-03-23",
+	"episodeNumber": 6,
+	"seasonNumber": 5,
+	"imdbRating": 8.8,
+	"title": "Wexler v. Goodman",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230eff"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f00"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.759Z"
+			},
+			"user": "yupyupyup",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"RealLawyer420",
+				"kabylake",
+				"SlippinJimmy",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084637"
+	},
+	"airDate": "2020-03-30",
+	"episodeNumber": 7,
+	"seasonNumber": 5,
+	"imdbRating": 8.8,
+	"title": "JMM",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f01"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f02"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"user": "kabylake",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084638"
+	},
+	"airDate": "2020-03-09",
+	"episodeNumber": 4,
+	"seasonNumber": 5,
+	"imdbRating": 8.3,
+	"title": "Namaste",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f03"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084639"
+	},
+	"airDate": "2020-03-16",
+	"episodeNumber": 5,
+	"seasonNumber": 5,
+	"imdbRating": 8.5,
+	"title": "Dedicado a Max",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f04"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.76Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [
+				"yupyupyup"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"RealLawyer420",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f05"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f06"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f07"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"user": "kabylake",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463a"
+	},
+	"airDate": "2020-03-02",
+	"episodeNumber": 3,
+	"seasonNumber": 5,
+	"imdbRating": 8.6,
+	"title": "The Guy for This",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f08"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.761Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f09"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"user": "kabylake",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"yupyupyup"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463b"
+	},
+	"airDate": "2020-04-06",
+	"episodeNumber": 8,
+	"seasonNumber": 5,
+	"imdbRating": 9.3,
+	"title": "Bagman",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0b"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "You can see the cameramans reflection at 7:36",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"yupyupyup",
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0c"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.762Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0d"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0e"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463c"
+	},
+	"airDate": "2020-04-20",
+	"episodeNumber": 10,
+	"seasonNumber": 5,
+	"imdbRating": 8.9,
+	"title": "Something Unforgivable",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f0f"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"RealLawyer420",
+				"kabylake"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463d"
+	},
+	"airDate": "2020-02-23",
+	"episodeNumber": 1,
+	"seasonNumber": 5,
+	"imdbRating": 8.3,
+	"title": "Magic Man",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f10"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.763Z"
+			},
+			"user": "yupyupyup",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"HuellsRulez",
+				"TheRealHowardHamlin",
+				"kabylake",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463e"
+	},
+	"airDate": "2018-08-20",
+	"episodeNumber": 3,
+	"seasonNumber": 4,
+	"imdbRating": 8.3,
+	"title": "Something Beautiful",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f11"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08463f"
+	},
+	"airDate": "2020-02-24",
+	"episodeNumber": 2,
+	"seasonNumber": 5,
+	"imdbRating": 8.4,
+	"title": "50% Off",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f12"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [],
+			"downvotes": [
+				"RealLawyer420",
+				"kabylake",
+				"SlippinJimmy",
+				"yupyupyup",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f13"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f14"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"user": "kabylake",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"yupyupyup",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f15"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.764Z"
+			},
+			"user": "HuellsRulez",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"RealLawyer420",
+				"kabylake",
+				"yupyupyup"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084640"
+	},
+	"airDate": "2022-08-15",
+	"episodeNumber": 13,
+	"seasonNumber": 6,
+	"imdbRating": 9.4,
+	"title": "Saul Gone",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f16"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Recurring themes of ambition and deception are woven throughout the episode.",
+			"upvotes": [
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"HuellsRulez",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f17"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"user": "HuellsRulez",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084641"
+	},
+	"airDate": "2020-04-13",
+	"episodeNumber": 9,
+	"seasonNumber": 5,
+	"imdbRating": 9.3,
+	"title": "Bad Choice Road",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f18"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f19"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.765Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084642"
+	},
+	"airDate": "2022-07-25",
+	"episodeNumber": 10,
+	"seasonNumber": 6,
+	"imdbRating": 8.2,
+	"title": "Nippy",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1b"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"user": "kabylake",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1c"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084643"
+	},
+	"airDate": "2022-08-01",
+	"episodeNumber": 11,
+	"seasonNumber": 6,
+	"imdbRating": 8.5,
+	"title": "Breaking Bad",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1d"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.766Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"SlippinJimmy",
+				"yupyupyup",
+				"kabylake",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1e"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"user": "kabylake",
+			"text": "You can see the cameramans reflection at 48:57",
+			"upvotes": [
+				"SlippinJimmy",
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f1f"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"user": "yupyupyup",
+			"text": "The main character often faces moral dilemmas that challenge his ethical boundaries.",
+			"upvotes": [
+				"SlippinJimmy",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084644"
+	},
+	"airDate": "2022-08-08",
+	"episodeNumber": 12,
+	"seasonNumber": 6,
+	"imdbRating": 9.0,
+	"title": "Waterworks",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f20"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [],
+			"downvotes": [
+				"yupyupyup",
+				"kabylake",
+				"TheRealHowardHamlin",
+				"RealLawyer420",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f21"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.767Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"kabylake"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084645"
+	},
+	"airDate": "2022-07-18",
+	"episodeNumber": 9,
+	"seasonNumber": 6,
+	"imdbRating": 9.1,
+	"title": "Fun and Games",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f22"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Each episode builds suspense, leaving viewers eager to see how events will unfold.",
+			"upvotes": [
+				"RealLawyer420",
+				"kabylake",
+				"yupyupyup",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f23"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [],
+			"downvotes": [
+				"SlippinJimmy",
+				"kabylake",
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f24"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Humor is used to balance darker moments, highlighting the show's unique tone.",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"HuellsRulez",
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f25"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.768Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Check out 29:6 for a surprise!",
+			"upvotes": [
+				"kabylake",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084646"
+	},
+	"airDate": "2022-07-11",
+	"episodeNumber": 8,
+	"seasonNumber": 6,
+	"imdbRating": 9.4,
+	"title": "Point and Shoot",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f26"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "This episode features clever legal strategies that reveal the complexities of the justice system.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"RealLawyer420",
+				"yupyupyup",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f27"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084647"
+	},
+	"airDate": "2022-05-23",
+	"episodeNumber": 7,
+	"seasonNumber": 6,
+	"imdbRating": 9.6,
+	"title": "Plan and Execution",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f28"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "You can see the cameramans reflection at 3:4",
+			"upvotes": [
+				"TheRealHowardHamlin",
+				"kabylake",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084648"
+	},
+	"airDate": "2022-05-09",
+	"episodeNumber": 5,
+	"seasonNumber": 6,
+	"imdbRating": 8.1,
+	"title": "Black and Blue",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f29"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.769Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"HuellsRulez",
+				"RealLawyer420",
+				"yupyupyup"
+			],
+			"downvotes": [
+				"kabylake",
+				"SlippinJimmy"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Check out 1:37 for a surprise!",
+			"upvotes": [
+				"RealLawyer420",
+				"yupyupyup",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2b"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin",
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2c"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "You can see the cameramans reflection at 36:33",
+			"upvotes": [],
+			"downvotes": [
+				"yupyupyup",
+				"HuellsRulez",
+				"RealLawyer420",
+				"kabylake",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa084649"
+	},
+	"airDate": "2022-04-25",
+	"episodeNumber": 3,
+	"seasonNumber": 6,
+	"imdbRating": 9.3,
+	"title": "Rock and Hard Place",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2d"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.77Z"
+			},
+			"user": "RealLawyer420",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"TheRealHowardHamlin",
+				"kabylake"
+			],
+			"downvotes": [
+				"HuellsRulez"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08464a"
+	},
+	"airDate": "2022-04-18",
+	"episodeNumber": 2,
+	"seasonNumber": 6,
+	"imdbRating": 8.7,
+	"title": "Carrot and Stick",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2e"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.771Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.771Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f2f"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.771Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.771Z"
+			},
+			"user": "yupyupyup",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"SlippinJimmy",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f30"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f31"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"user": "HuellsRulez",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"yupyupyup",
+				"kabylake",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"RealLawyer420",
+				"SlippinJimmy"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08464b"
+	},
+	"airDate": "2022-04-18",
+	"episodeNumber": 1,
+	"seasonNumber": 6,
+	"imdbRating": 8.4,
+	"title": "Wine and Roses",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f32"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"kabylake",
+				"SlippinJimmy",
+				"yupyupyup",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"RealLawyer420"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f33"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.772Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "Unexpected alliances often form, leading to surprising outcomes in various situations.",
+			"upvotes": [
+				"HuellsRulez",
+				"RealLawyer420"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"SlippinJimmy",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f34"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [],
+			"downvotes": [
+				"kabylake",
+				"SlippinJimmy",
+				"RealLawyer420",
+				"HuellsRulez",
+				"yupyupyup"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f35"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"user": "RealLawyer420",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"yupyupyup",
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"kabylake",
+				"HuellsRulez",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08464c"
+	},
+	"airDate": "2022-05-02",
+	"episodeNumber": 4,
+	"seasonNumber": 6,
+	"imdbRating": 8.3,
+	"title": "Hit and Run",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f36"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"user": "yupyupyup",
+			"text": "Subtle visual storytelling enhances the narrative without relying heavily on dialogue.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"HuellsRulez",
+				"kabylake",
+				"RealLawyer420",
+				"TheRealHowardHamlin"
+			]
+		}
+	]
+},
+{
+	"_id": {
+		"$oid": "671158ec61e58bf0aa08464d"
+	},
+	"airDate": "2022-05-16",
+	"episodeNumber": 6,
+	"seasonNumber": 6,
+	"imdbRating": 8.2,
+	"title": "Axe and Grind",
+	"trivias": [
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f37"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.773Z"
+			},
+			"user": "yupyupyup",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"SlippinJimmy",
+				"TheRealHowardHamlin"
+			],
+			"downvotes": [
+				"kabylake",
+				"RealLawyer420",
+				"HuellsRulez"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f38"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"user": "yupyupyup",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"TheRealHowardHamlin",
+				"SlippinJimmy",
+				"RealLawyer420",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f39"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"user": "TheRealHowardHamlin",
+			"text": "The show frequently incorporates flashbacks to provide deeper insights into the characters' motivations.",
+			"upvotes": [
+				"SlippinJimmy"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"RealLawyer420",
+				"HuellsRulez",
+				"kabylake"
+			]
+		},
+		{
+			"_id": {
+				"$oid": "67263e95f42fd0270f230f3a"
+			},
+			"createdDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"modifiedDtm": {
+				"$date": "2024-11-02T15:00:37.774Z"
+			},
+			"user": "SlippinJimmy",
+			"text": "Character development is a key focus, with relationships evolving dramatically over time.",
+			"upvotes": [
+				"RealLawyer420",
+				"HuellsRulez"
+			],
+			"downvotes": [
+				"yupyupyup",
+				"TheRealHowardHamlin",
+				"kabylake"
+			]
+		}
+	]
+}]
+

@@ -1,21 +1,39 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      @for(business of business_list;
-        track business.name) {
+      @for(episode of episodes_list;
+        track episode.name) {
         <div class="card text-white bg-primary mb-3">
           <div class="card-header">
-            {{ business.name }}
+            {{ episode.title }}
           </div>
           <div class="card-body">
-            This business is based in
-            {{ business.town }}
+            Season:
+            {{ episode.seasonNumber}} <br>
+            Episode Number:
+            {{ episode.episodeNumber }}
           </div>
           <div class="card-footer">
-            Rating: {{ business.rating }}
+            Rating: {{ episode.imdbRating }}
           </div>
         </div>
       }
     </div> <!-- col -->
   </div> <!-- row -->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <button class="btn btn-primary"
+              (click)="previousPage()">Previous</button>
+    </div>
+    <div class="col-sm-4 text-center align-self-center">
+      Showing page {{ this.page }}
+      of {{ this.dataService.getLastPageNumber() }}
+    </div>
+    <div class="col-sm-4 text-end">
+      <button class="btn btn-primary"
+              (click)="nextPage()">Next</button>
+    </div>
+  </div>
+
 </div> <!-- container -->
