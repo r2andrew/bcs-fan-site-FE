@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { DataService } from './data.service';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'episodes',
   standalone: true,
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterModule, CommonModule],
   providers: [DataService],
   templateUrl: './episodes.component.html',
   styleUrl: './episodes.component.css'
@@ -14,6 +16,7 @@ export class EpisodesComponent {
   episodes_list: any;
   page: number = 1;
 
+  protected readonly Math = Math;
   constructor(public dataService: DataService) {}
 
   ngOnInit() {

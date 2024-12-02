@@ -1,23 +1,24 @@
 <div class="container" style="margin-top: 70px">
-  <div class="row">
-    <div class="col-sm-12">
-      @for(episode of episode_list;
-        track episode.title) {
-        <div class="card text-white bg-primary mb-3">
-          <div class="card-header">
-            {{ episode.title }}
-          </div>
-          <div class="card-body">
-            Season:
-            {{ episode.seasonNumber}} <br>
-            Episode Number:
-            {{ episode.episodeNumber }}
-          </div>
-          <div class="card-footer">
-            Rating: {{ episode.imdbRating }}
-          </div>
+  @for ( episode of episode_list; track episode.title ) {
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="display-1">
+          {{ episode.title }}
         </div>
-      }
-    </div> <!-- col -->
-  </div> <!-- row -->
-</div> <!-- container -->
+        <span *ngFor="let star of [].constructor(Math.round(episode.imdbRating))">
+          <img src="images/star.png"
+               style="width:30px; height:30px">
+        </span>
+      </div>
+      <div class="col-sm-6 align-self-end text-end">
+        <span>
+          Season:
+          {{ episode.seasonNumber}} <br>
+          Episode Number:
+          {{ episode.episodeNumber }}
+        </span>
+      </div>
+    </div>
+  }
+</div>

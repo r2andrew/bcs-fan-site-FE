@@ -18,6 +18,10 @@
           </div>
           <div class="card-footer">
             Rating: {{ episode.imdbRating }}
+            <span *ngFor="let star of [].constructor(Math.round(episode.imdbRating))">
+              <img src="images/star.png"
+                   style="width:30px; height:30px">
+            </span>
           </div>
         </div>
       }

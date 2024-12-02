@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, ActivatedRoute } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { DataService } from './data.service';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'episode',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule],
   providers: [DataService],
   templateUrl: './episode.component.html',
   styleUrl: './episode.component.css'
@@ -21,4 +22,5 @@ export class EpisodeComponent {
         this.route.snapshot.paramMap.get('id'));
   }
 
+  protected readonly Math = Math;
 }
