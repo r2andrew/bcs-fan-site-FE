@@ -20,4 +20,15 @@ export class DataService {
     return Math.ceil( jsonData.length / this.pageSize );
   }
 
+  getEpisode(id: any) {
+    let dataToReturn: any[] = [];
+    jsonData.forEach( function(episode) {
+      if (episode['_id']['$oid'] == id) {
+        dataToReturn.push( episode );
+      }
+    })
+    return dataToReturn;
+  }
+
+
 }

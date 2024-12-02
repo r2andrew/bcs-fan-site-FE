@@ -1,0 +1,23 @@
+<div class="container" style="margin-top: 70px">
+  <div class="row">
+    <div class="col-sm-12">
+      @for(episode of episode_list;
+        track episode.title) {
+        <div class="card text-white bg-primary mb-3">
+          <div class="card-header">
+            {{ episode.title }}
+          </div>
+          <div class="card-body">
+            Season:
+            {{ episode.seasonNumber}} <br>
+            Episode Number:
+            {{ episode.episodeNumber }}
+          </div>
+          <div class="card-footer">
+            Rating: {{ episode.imdbRating }}
+          </div>
+        </div>
+      }
+    </div> <!-- col -->
+  </div> <!-- row -->
+</div> <!-- container -->

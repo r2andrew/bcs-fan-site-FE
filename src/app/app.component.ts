@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { EpisodesComponent } from './episodes.component';
 import jsonData from '../assets/episodes.json'
+import { NavComponent } from './nav.component'
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, EpisodesComponent],
+  imports: [RouterOutlet, NavComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
