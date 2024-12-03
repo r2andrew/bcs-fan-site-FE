@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { Injectable } from "@angular/core";
 @Injectable()
 export class WebService{
@@ -19,13 +19,63 @@ export class WebService{
     return this.http.get<any>('http://localhost:5000/api/v1.0/episodes/' +
       id + '/trivias');
   }
-
-
-  postTrivia(id: any, trivia: any) {
+  postTrivia(id: any, trivia: any, token:any) {
       let postData = new FormData();
       postData.append("text", trivia.trivia);
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'x-access-token': token
+        })
+      };
       return this.http.post<any>(
         'http://localhost:5000/api/v1.0/episodes/' +
-        id + "/trivias", postData);
+        id + "/trivias", postData, httpOptions);
     }
+
+  voteTrivia(eId: any, tId: any, voteDirection: string, token: any) {
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'x-access-token': token
+        })
+      };
+      return this.http.patch<any>(
+        'http://localhost:5000/api/v1.0/episodes/' + eId + '/trivias/' + tId + '/vote?vote=' + voteDirection,
+        '', httpOptions
+      )
   }
+
+  deleteTrivia(eId: any, tId: any, token:any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'x-access-token': token
+      })
+    };
+    return this.http.delete<any>(
+      'http://localhost:5000/api/v1.0/episodes/' + eId + '/trivias/' + tId,
+      httpOptions
+    )
+  }
+
+  login(creds: any) {
+    let authData = 'Basic ' + btoa(creds.username + ':' + creds.password);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'authorization': authData
+      })
+    };
+    return this.http.get<any>('http://localhost:5000/api/v1.0/login',
+      httpOptions)
+  }
+
+  logout(token: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'x-access-token': token
+      })
+    };
+    return this.http.get<any>('http://localhost:5000/api/v1.0/logout',
+      httpOptions)
+  }
+}

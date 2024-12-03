@@ -11,4 +11,10 @@
          [routerLink]="['/episodes']">Episodes</a>
     </li>
   </ul>
+  <div class="form-inline ms-auto"
+       style="margin-right: 10px; color: white">
+    {{sessionStorage['loggedInName']}}
+    <auth-button></auth-button>
+  </div>
 </div>
+
