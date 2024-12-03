@@ -1,6 +1,13 @@
 <button class="btn btn-primary"
-        (click)="modalService.open('login')">
+        (click)="modalService.open('login')"
+        *ngIf="!sessionStorage['x-access-token']">
   Log in
+</button>
+
+<button class="btn btn-primary"
+        (click)="logout()"
+        *ngIf="sessionStorage['x-access-token']">
+  Log out
 </button>
 
 <modal id="login" class="text-black">

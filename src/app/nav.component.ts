@@ -7,4 +7,6 @@ import {AuthButtonComponent} from './authButton.component';
   imports: [RouterModule, AuthButtonComponent],
   templateUrl: './nav.component.html'
 })
-export class NavComponent { }
+export class NavComponent {
+  protected readonly sessionStorage = sessionStorage;
+}

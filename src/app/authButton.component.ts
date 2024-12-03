@@ -22,22 +22,43 @@ export class AuthButtonComponent {
       username: ['', Validators.required],
       password: ['', Validators.required]
     })
+    console.log(JSON.stringify(sessionStorage['loggedInUser']))
   }
 
   login() {
-    console.log(this.loginForm.value)
     this.webService.login(
       this.loginForm.value)
       .subscribe(response => {
         this.loginForm.reset();
-
+        this.modalService.close()
         sessionStorage['x-access-token'] = response['token']
-        console.log('logged in and stored token')
-      },
+        sessionStorage['loggedInUsername'] = response['user']['username']
+        sessionStorage['loggedInName'] = response['user']['name']
+        sessionStorage['admin'] = response['user']['admin']
+
+        },
       error => {
         console.log('error logging in')
       });
   }
+
+  logout() {
+    this.webService.logout(
+      sessionStorage['x-access-token']
+    )
+      .subscribe(response => {
+          sessionStorage.removeItem('x-access-token')
+          sessionStorage.removeItem('loggedInUsername')
+          sessionStorage.removeItem('loggedInName')
+          sessionStorage.removeItem('admin')
+
+        },
+        error => {
+          console.log('error logging out')
+        });
+  }
+
+
   isInvalid(control: any) {
     return this.loginForm.controls[control].invalid &&
       this.loginForm.controls[control].touched;
@@ -53,4 +74,5 @@ export class AuthButtonComponent {
       this.isUntouched();
   }
 
+  protected readonly sessionStorage = sessionStorage;
 }

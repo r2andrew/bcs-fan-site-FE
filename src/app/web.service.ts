@@ -38,4 +38,15 @@ export class WebService{
     return this.http.get<any>('http://localhost:5000/api/v1.0/login',
       httpOptions)
   }
+
+  logout(token: any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type':  'application/json',
+        'x-access-token': token
+      })
+    };
+    return this.http.get<any>('http://localhost:5000/api/v1.0/logout',
+      httpOptions)
+  }
 }
