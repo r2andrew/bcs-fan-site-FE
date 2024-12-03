@@ -32,6 +32,18 @@ export class WebService{
         id + "/trivias", postData, httpOptions);
     }
 
+  voteTrivia(eId: any, tId: any, voteDirection: string, token: any) {
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'x-access-token': token
+        })
+      };
+      return this.http.patch<any>(
+        'http://localhost:5000/api/v1.0/episodes/' + eId + '/trivias/' + tId + '/vote?vote=' + voteDirection,
+        '', httpOptions
+      )
+}
+
   login(creds: any) {
     let authData = 'Basic ' + btoa(creds.username + ':' + creds.password);
     const httpOptions = {

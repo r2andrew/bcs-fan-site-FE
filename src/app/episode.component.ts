@@ -45,6 +45,21 @@ export class EpisodeComponent {
 
   }
 
+  vote(voteDirection: string, tId:any){
+    this.webService.voteTrivia(
+      this.route.snapshot.paramMap.get('id'),
+      tId,
+      voteDirection,
+      sessionStorage['x-access-token']
+    ).subscribe((response) => {
+      this.webService.getTrivias(
+        this.route.snapshot.paramMap.get('id'))
+        .subscribe( (response) => {
+          this.trivia_list = response;
+        });
+    })
+  }
+
   onSubmit() {
     this.webService.postTrivia(
       this.route.snapshot.paramMap.get('id'),
