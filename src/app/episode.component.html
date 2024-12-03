@@ -27,6 +27,9 @@
           <div class="card bg-light mb-3">
             <div class="card-header">
               {{ trivia.user }}
+              <span *ngIf="((trivia.user == sessionStorage['loggedInUsername']) || (sessionStorage['admin'] == 'true'))">
+                <button class="btn btn-outline-danger me-2" (click)="delete(trivia._id)">delete</button>
+              </span>
             </div>
             <div class="card-body">
               {{ trivia.text }}

@@ -45,6 +45,13 @@ export class EpisodeComponent {
 
   }
 
+  logout(){
+    sessionStorage.removeItem('x-access-token')
+    sessionStorage.removeItem('loggedInUsername')
+    sessionStorage.removeItem('loggedInName')
+    sessionStorage.removeItem('admin')
+  }
+
   vote(voteDirection: string, tId:any){
     this.webService.voteTrivia(
       this.route.snapshot.paramMap.get('id'),
@@ -60,10 +67,7 @@ export class EpisodeComponent {
     },
       error => {
       alert('Session Expired, please log in again')
-        sessionStorage.removeItem('x-access-token')
-        sessionStorage.removeItem('loggedInUsername')
-        sessionStorage.removeItem('loggedInName')
-        sessionStorage.removeItem('admin')
+        this.logout()
       })
   }
 
@@ -84,12 +88,30 @@ export class EpisodeComponent {
       },
         error => {
           alert('Session Expired, please log in again')
-          sessionStorage.removeItem('x-access-token')
-          sessionStorage.removeItem('loggedInUsername')
-          sessionStorage.removeItem('loggedInName')
-          sessionStorage.removeItem('admin')
+          this.logout()
         });
   }
+
+  delete(tId: string){
+    this.webService.deleteTrivia(
+      this.route.snapshot.paramMap.get('id'),
+      tId,
+      sessionStorage['x-access-token'])
+      .subscribe( (response) => {
+
+          this.webService.getTrivias(
+            this.route.snapshot.paramMap.get('id'))
+            .subscribe( (response) => {
+              this.trivia_list = response;
+            });
+
+        },
+        error => {
+          alert('Session Expired, please log in again')
+          this.logout()
+        });
+  }
+
   isInvalid(control: any) {
     return this.triviaForm.controls[control].invalid &&
       this.triviaForm.controls[control].touched;

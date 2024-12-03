@@ -42,7 +42,19 @@ export class WebService{
         'http://localhost:5000/api/v1.0/episodes/' + eId + '/trivias/' + tId + '/vote?vote=' + voteDirection,
         '', httpOptions
       )
-}
+  }
+
+  deleteTrivia(eId: any, tId: any, token:any) {
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'x-access-token': token
+      })
+    };
+    return this.http.delete<any>(
+      'http://localhost:5000/api/v1.0/episodes/' + eId + '/trivias/' + tId,
+      httpOptions
+    )
+  }
 
   login(creds: any) {
     let authData = 'Basic ' + btoa(creds.username + ':' + creds.password);
