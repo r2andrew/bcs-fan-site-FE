@@ -51,10 +51,13 @@ export class AuthButtonComponent {
           sessionStorage.removeItem('loggedInUsername')
           sessionStorage.removeItem('loggedInName')
           sessionStorage.removeItem('admin')
-
         },
         error => {
-          console.log('error logging out')
+          console.log('token expired')
+          sessionStorage.removeItem('x-access-token')
+          sessionStorage.removeItem('loggedInUsername')
+          sessionStorage.removeItem('loggedInName')
+          sessionStorage.removeItem('admin')
         });
   }
 

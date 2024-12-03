@@ -57,7 +57,14 @@ export class EpisodeComponent {
         .subscribe( (response) => {
           this.trivia_list = response;
         });
-    })
+    },
+      error => {
+      alert('Session Expired, please log in again')
+        sessionStorage.removeItem('x-access-token')
+        sessionStorage.removeItem('loggedInUsername')
+        sessionStorage.removeItem('loggedInName')
+        sessionStorage.removeItem('admin')
+      })
   }
 
   onSubmit() {
@@ -74,8 +81,14 @@ export class EpisodeComponent {
             this.trivia_list = response;
           });
 
-      });
-
+      },
+        error => {
+          alert('Session Expired, please log in again')
+          sessionStorage.removeItem('x-access-token')
+          sessionStorage.removeItem('loggedInUsername')
+          sessionStorage.removeItem('loggedInName')
+          sessionStorage.removeItem('admin')
+        });
   }
   isInvalid(control: any) {
     return this.triviaForm.controls[control].invalid &&
