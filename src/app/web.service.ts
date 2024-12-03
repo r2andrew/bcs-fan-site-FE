@@ -19,12 +19,17 @@ export class WebService{
     return this.http.get<any>('http://localhost:5000/api/v1.0/episodes/' +
       id + '/trivias');
   }
-  postTrivia(id: any, trivia: any) {
+  postTrivia(id: any, trivia: any, token:any) {
       let postData = new FormData();
       postData.append("text", trivia.trivia);
+      const httpOptions = {
+        headers: new HttpHeaders({
+          'x-access-token': token
+        })
+      };
       return this.http.post<any>(
         'http://localhost:5000/api/v1.0/episodes/' +
-        id + "/trivias", postData);
+        id + "/trivias", postData, httpOptions);
     }
 
   login(creds: any) {

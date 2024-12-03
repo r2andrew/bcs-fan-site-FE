@@ -46,7 +46,11 @@
 
 <div class="container" style="margin-top: 50px;">
   <div class="row">
-    <div class="col-sm-12">
+    <span *ngIf="!sessionStorage['x-access-token']">
+      Login to leave trivia
+    </span>
+    <div class="col-sm-12"
+         *ngIf="sessionStorage['x-access-token']">
       <h2>Submit Trivia!</h2>
       <form [formGroup]="triviaForm"
             (ngSubmit)="onSubmit()">

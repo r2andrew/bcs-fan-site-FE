@@ -48,7 +48,8 @@ export class EpisodeComponent {
   onSubmit() {
     this.webService.postTrivia(
       this.route.snapshot.paramMap.get('id'),
-      this.triviaForm.value)
+      this.triviaForm.value,
+      sessionStorage['x-access-token'])
       .subscribe( (response) => {
         this.triviaForm.reset();
 
@@ -75,4 +76,5 @@ export class EpisodeComponent {
   }
 
   protected readonly Math = Math;
+  protected readonly sessionStorage = sessionStorage;
 }
