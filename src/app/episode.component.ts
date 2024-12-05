@@ -5,13 +5,15 @@ import { WebService } from './web.service';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
+import {ModalService} from './modal.service';
+import {ModalComponent} from './modal.component';
 
 
 @Component({
   selector: 'episode',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  providers: [DataService, WebService],
+  imports: [CommonModule, ReactiveFormsModule, ModalComponent],
+  providers: [DataService, WebService, ModalService],
   templateUrl: './episode.component.html',
   styleUrl: './episode.component.css'
 })
@@ -19,9 +21,12 @@ export class EpisodeComponent {
   episode_list: any;
   trivia_list: any;
   triviaForm: any;
+  episode_loaded: boolean = false;
+  sortBy: string = 'new'
 
   constructor( public dataService: DataService,
                private webService: WebService,
+               public modalService: ModalService,
                private route: ActivatedRoute,
                private formBuilder: FormBuilder) {}
 
@@ -30,19 +35,34 @@ export class EpisodeComponent {
       this.route.snapshot.paramMap.get('id'))
       .subscribe( (response: any) => {
         this.episode_list = [response];
+        this.webService.getTrivias(
+          this.route.snapshot.paramMap.get('id'))
+          .subscribe( (response) => {
+            this.trivia_list = response;
+            this.sort()
+            this.episode_loaded = true;
+          });
       })
 
-    this.webService.getTrivias(
-      this.route.snapshot.paramMap.get('id'))
-      .subscribe( (response) => {
-        this.trivia_list = response;
-      });
 
 
     this.triviaForm = this.formBuilder.group( {
       trivia: ['', Validators.required]
     })
 
+  }
+
+  onSortSelection (event: any ) {
+    this.sortBy = event.target.value;
+    this.sort();
+  }
+
+  sort() {
+    if (this.sortBy == 'top') {
+      this.trivia_list.sort((a: any, b: any) => b.score - a.score)
+    } else {
+      this.trivia_list.sort((a: any, b: any) => Date.parse(b.createdDtm) - Date.parse(a.createdDtm))
+    }
   }
 
   logout(){
@@ -63,11 +83,13 @@ export class EpisodeComponent {
         this.route.snapshot.paramMap.get('id'))
         .subscribe( (response) => {
           this.trivia_list = response;
+          this.sort()
         });
     },
       error => {
       alert('Session Expired, please log in again')
-        this.logout()
+        this.logout();
+        this.modalService.close();
       })
   }
 
@@ -78,17 +100,20 @@ export class EpisodeComponent {
       sessionStorage['x-access-token'])
       .subscribe( (response) => {
         this.triviaForm.reset();
+        this.modalService.close();
 
         this.webService.getTrivias(
-          this.route.snapshot.paramMap.get('id'))
-          .subscribe( (response) => {
-            this.trivia_list = response;
-          });
+        this.route.snapshot.paramMap.get('id'))
+        .subscribe( (response) => {
+          this.trivia_list = response;
+          this.sort()
+        });
 
       },
         error => {
           alert('Session Expired, please log in again')
           this.logout()
+          this.modalService.close();
         });
   }
 
@@ -103,6 +128,7 @@ export class EpisodeComponent {
             this.route.snapshot.paramMap.get('id'))
             .subscribe( (response) => {
               this.trivia_list = response;
+              this.sort()
             });
 
         },
@@ -127,4 +153,5 @@ export class EpisodeComponent {
 
   protected readonly Math = Math;
   protected readonly sessionStorage = sessionStorage;
+  protected readonly alert = alert;
 }

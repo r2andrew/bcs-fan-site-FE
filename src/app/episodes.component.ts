@@ -20,6 +20,7 @@ export class EpisodesComponent {
   page: number = 1;
   pageSize: number = 3;
   totalPages: number = 1;
+  episodes_loaded: boolean = false;
 
 
   protected readonly Math = Math;
@@ -34,6 +35,7 @@ export class EpisodesComponent {
     this.webService.getEpisodes()
       .subscribe((response) => {
         this.data = response['data']
+        this.episodes_loaded = true;
 
         let pageStart = (this.page - 1) * this.pageSize;
         let pageEnd = pageStart + this.pageSize;

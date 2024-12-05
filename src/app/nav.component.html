@@ -1,6 +1,8 @@
-<div class="navbar navbar-expand-sm bg-primary
- navbar-dark fixed-top">
-  <span class="navbar-brand">BCS Fansite</span>
+<div class="navbar navbar-expand-sm bg-dark
+ navbar-dark fixed-top p-3">
+  <span class="navbar-brand">
+    <img src="images/bcs_trivia_logo.png" height="40px">
+  </span>
   <ul class="navbar-nav">
     <li class="nav-item">
       <a class="nav-link"
@@ -13,7 +15,7 @@
   </ul>
   <div class="form-inline ms-auto"
        style="margin-right: 10px; color: white">
-    {{sessionStorage['loggedInName']}}
+    <span style="margin-right: 20px">{{sessionStorage['loggedInName']}}</span>
     <auth-button></auth-button>
   </div>
 </div>
