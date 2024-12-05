@@ -21,6 +21,9 @@
       </div>
     </div>
 
+    <span *ngIf="!sessionStorage['x-access-token']">
+        Login to leave trivia
+    </span>
     <div class="row w-100 p-2" style="margin-top: 20px" *ngIf="sessionStorage['x-access-token']">
       <button class="btn btn-light me-2" (click)="modalService.open('submitModal')">Submit Trivia</button>
     </div>
@@ -29,34 +32,43 @@
       <div class="col-sm-12">
         @for ( trivia of trivia_list; track trivia ) {
           <div class="card bg-light mb-3">
-            <div class="card-header">
+            <div class="card-header row">
+              <div class="col-sm-6 align-content-center">
               {{ trivia.user }}
+              </div>
+              <div class="col-sm-6 text-end">
               <span *ngIf="((trivia.user == sessionStorage['loggedInUsername']) || (sessionStorage['admin'] == 'true'))">
-                <button class="btn btn-outline-danger me-2" (click)="delete(trivia._id)">delete</button>
+                <button class="btn btn-danger me-2" (click)="delete(trivia._id)">Delete</button>
               </span>
+              </div>
             </div>
             <div class="card-body">
               {{ trivia.text }}
+            </div>
+            <div class="card-footer">
+
               <span *ngIf="trivia.upvotes.includes(sessionStorage['loggedInUsername'])">
-               <button class="btn btn-danger me-2" (click)="vote('up', trivia._id)">upvote</button>
-                <button class="btn btn-outline-dark me-2" (click)="vote('down', trivia._id)">downvote</button>
+                <img src="images/upvote.png" style="width: 40px">
+                {{ trivia.score }}
+                <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
+                     (click)="vote('down', trivia._id)">
               </span>
               <span *ngIf="trivia.downvotes.includes(sessionStorage['loggedInUsername'])">
-                <button class="btn btn-outline-dark me-2" (click)="vote('up', trivia._id)">upvote</button>
-                <button class="btn btn-primary me-2" (click)="vote('down', trivia._id)">downvote</button>
+                <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
+                     (click)="vote('up', trivia._id)">
+                {{ trivia.score }}
+                <img src="images/downvote.png" style="width: 40px">
               </span>
               <span *ngIf="(!(trivia.upvotes.includes(sessionStorage['loggedInUsername'])) &&
                           (!(trivia.downvotes.includes(sessionStorage['loggedInUsername'])))) &&
                             sessionStorage['x-access-token']">
 
-                <button class="btn btn-outline-dark me-2" (click)="vote('up', trivia._id)">upvote</button>
-                <button class="btn btn-outline-dark me-2" (click)="vote('down', trivia._id)">downvote</button>
+                <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
+                     (click)="vote('up', trivia._id)">
+                {{ trivia.score }}
+                <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
+                     (click)="vote('down', trivia._id)">
               </span>
-            </div>
-            <div class="card-footer">
-              Upvotes: {{ trivia.upvotes }} <br>
-              Downvotes: {{ trivia.downvotes }} <br>
-              Score: {{ trivia.score }}
             </div>
           </div>
         }
@@ -66,9 +78,6 @@
   <modal id="submitModal">
   <div class="container">
     <div class="row">
-      <span *ngIf="!sessionStorage['x-access-token']">
-        Login to leave trivia
-      </span>
       <div class="col-sm-12"
            *ngIf="sessionStorage['x-access-token']">
         <h2>Submit Trivia!</h2>
