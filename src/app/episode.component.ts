@@ -5,13 +5,15 @@ import { WebService } from './web.service';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
+import {ModalService} from './modal.service';
+import {ModalComponent} from './modal.component';
 
 
 @Component({
   selector: 'episode',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  providers: [DataService, WebService],
+  imports: [CommonModule, ReactiveFormsModule, ModalComponent],
+  providers: [DataService, WebService, ModalService],
   templateUrl: './episode.component.html',
   styleUrl: './episode.component.css'
 })
@@ -22,6 +24,7 @@ export class EpisodeComponent {
 
   constructor( public dataService: DataService,
                private webService: WebService,
+               public modalService: ModalService,
                private route: ActivatedRoute,
                private formBuilder: FormBuilder) {}
 
@@ -67,7 +70,8 @@ export class EpisodeComponent {
     },
       error => {
       alert('Session Expired, please log in again')
-        this.logout()
+        this.logout();
+        this.modalService.close();
       })
   }
 
@@ -78,17 +82,19 @@ export class EpisodeComponent {
       sessionStorage['x-access-token'])
       .subscribe( (response) => {
         this.triviaForm.reset();
+        this.modalService.close();
 
         this.webService.getTrivias(
-          this.route.snapshot.paramMap.get('id'))
-          .subscribe( (response) => {
-            this.trivia_list = response;
-          });
+        this.route.snapshot.paramMap.get('id'))
+        .subscribe( (response) => {
+          this.trivia_list = response;
+        });
 
       },
         error => {
           alert('Session Expired, please log in again')
           this.logout()
+          this.modalService.close();
         });
   }
 

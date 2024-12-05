@@ -1,6 +1,6 @@
-<div class="container" style="margin-top: 70px">
+<div class="bg-image"></div>
+<div class="episodeContainer">
   @for ( episode of episode_list; track episode.title ) {
-
     <div class="row">
       <div class="col-sm-6">
         <div class="display-1">
@@ -21,7 +21,11 @@
       </div>
     </div>
 
-    <div class="row" style="margin-top: 70px">
+    <div class="row w-100 p-2" style="margin-top: 20px" *ngIf="sessionStorage['x-access-token']">
+      <button class="btn btn-light me-2" (click)="modalService.open('submitModal')">Submit Trivia</button>
+    </div>
+
+    <div class="row triviasContainer">
       <div class="col-sm-12">
         @for ( trivia of trivia_list; track trivia ) {
           <div class="card bg-light mb-3">
@@ -59,32 +63,33 @@
       </div>
     </div>
   }
-</div>
-
-<div class="container" style="margin-top: 50px;">
-  <div class="row">
-    <span *ngIf="!sessionStorage['x-access-token']">
-      Login to leave trivia
-    </span>
-    <div class="col-sm-12"
-         *ngIf="sessionStorage['x-access-token']">
-      <h2>Submit Trivia!</h2>
-      <form [formGroup]="triviaForm"
-            (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <textarea name="trivia" id="trivia"
-                    class="form-control"
-                    formControlName="trivia"
-                    [ngClass]="{ 'error' : isInvalid('trivia')}">>
-          </textarea>
-        </div>
-        <span *ngIf="isIncomplete()">
-          You must complete all fields
-        </span>
-        <button *ngIf="!isIncomplete()" class="btn btn-primary"
-                type="submit"
-                style="margin-top: 20px">Submit</button>
-      </form>
+  <modal id="submitModal">
+  <div class="container">
+    <div class="row">
+      <span *ngIf="!sessionStorage['x-access-token']">
+        Login to leave trivia
+      </span>
+      <div class="col-sm-12"
+           *ngIf="sessionStorage['x-access-token']">
+        <h2>Submit Trivia!</h2>
+        <form [formGroup]="triviaForm"
+              (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <textarea name="trivia" id="trivia"
+                      class="form-control"
+                      formControlName="trivia"
+                      [ngClass]="{ 'error' : isInvalid('trivia')}">>
+            </textarea>
+          </div>
+          <span *ngIf="isIncomplete()">
+            You must complete all fields
+          </span>
+          <button *ngIf="!isIncomplete()" class="btn btn-primary"
+                  type="submit"
+                  style="margin-top: 20px">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
+  </modal>
 </div>

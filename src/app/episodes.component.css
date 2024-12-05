@@ -7,7 +7,7 @@
   background-position: top;
   background-size: 100%;
   background-image: url(../assets/paint.jpg);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 .container1 {
