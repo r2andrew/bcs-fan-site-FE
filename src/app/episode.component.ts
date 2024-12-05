@@ -21,6 +21,7 @@ export class EpisodeComponent {
   episode_list: any;
   trivia_list: any;
   triviaForm: any;
+  episode_loaded: boolean = false;
 
   constructor( public dataService: DataService,
                private webService: WebService,
@@ -33,13 +34,14 @@ export class EpisodeComponent {
       this.route.snapshot.paramMap.get('id'))
       .subscribe( (response: any) => {
         this.episode_list = [response];
+        this.webService.getTrivias(
+          this.route.snapshot.paramMap.get('id'))
+          .subscribe( (response) => {
+            this.trivia_list = response;
+            this.episode_loaded = true;
+          });
       })
 
-    this.webService.getTrivias(
-      this.route.snapshot.paramMap.get('id'))
-      .subscribe( (response) => {
-        this.trivia_list = response;
-      });
 
 
     this.triviaForm = this.formBuilder.group( {

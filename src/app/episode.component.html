@@ -1,8 +1,9 @@
 <div class="bg-image"></div>
 <div class="episodeContainer">
+  <ng-container *ngIf="episode_loaded">
   @for ( episode of episode_list; track episode.title ) {
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="row" style="height: 120px">
+      <div class="col-sm-6 align-self-end">
         <div class="display-1">
           {{ episode.title }}
         </div>
@@ -50,7 +51,7 @@
               <!-- user upvoted -->
               <span *ngIf="trivia.upvotes.includes(sessionStorage['loggedInUsername'])">
                 <img src="images/upvote.png" style="width: 40px">
-                {{ trivia.score }}
+                <span style="cursor: default;"> {{ trivia.score }} </span>
                 <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
                      (click)="vote('down', trivia._id)">
               </span>
@@ -59,7 +60,7 @@
               <span *ngIf="trivia.downvotes.includes(sessionStorage['loggedInUsername'])">
                 <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
                      (click)="vote('up', trivia._id)">
-                {{ trivia.score }}
+                <span style="cursor: default;"> {{ trivia.score }} </span>
                 <img src="images/downvote.png" style="width: 40px">
               </span>
 
@@ -69,7 +70,7 @@
                             sessionStorage['x-access-token']">
                 <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
                      (click)="vote('up', trivia._id)">
-                {{ trivia.score }}
+                <span style="cursor: default;"> {{ trivia.score }} </span>
                 <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
                      (click)="vote('down', trivia._id)">
               </span>
@@ -89,6 +90,13 @@
       </div>
     </div>
   }
+  </ng-container>
+
+  <!-- if loading reviews, show loading wheel -->
+  <div class="" *ngIf="(!episode_loaded)">
+    <div class="cssload-speeding-wheel"></div>
+  </div>
+
   <modal id="submitModal">
   <div class="container">
     <div class="row">

@@ -1,8 +1,9 @@
 <div class="bg-image"></div>
 
-<div class="container1" style="margin-top: 70px; color: white">
-  <div class="row">
+<div class="episodesContainer" style="margin-top: 70px; color: white">
+  <div class="row" style="height: 600px">
     <div class="col-sm-12">
+      <ng-container *ngIf="episodes_loaded">
       @for(episode of episodes_list;
         track episode.title) {
         <div class="card text-black bg-white mb-3"
@@ -26,6 +27,13 @@
           </div>
         </div>
       }
+      </ng-container>
+
+      <!-- if loading reviews, show loading wheel -->
+      <div class="" *ngIf="(!episodes_loaded)">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+
     </div> <!-- col -->
   </div> <!-- row -->
 

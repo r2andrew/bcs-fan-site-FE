@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
 }
 
-.container1 {
+.episodesContainer {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -18,3 +18,5 @@
   top: 5%;
   left: 40%;
 }
+
+
