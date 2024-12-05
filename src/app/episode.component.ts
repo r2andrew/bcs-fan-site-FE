@@ -133,4 +133,5 @@ export class EpisodeComponent {
 
   protected readonly Math = Math;
   protected readonly sessionStorage = sessionStorage;
+  protected readonly alert = alert;
 }
