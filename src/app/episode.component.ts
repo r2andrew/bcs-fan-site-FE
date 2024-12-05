@@ -22,6 +22,7 @@ export class EpisodeComponent {
   trivia_list: any;
   triviaForm: any;
   episode_loaded: boolean = false;
+  sortBy: string = 'new'
 
   constructor( public dataService: DataService,
                private webService: WebService,
@@ -38,6 +39,7 @@ export class EpisodeComponent {
           this.route.snapshot.paramMap.get('id'))
           .subscribe( (response) => {
             this.trivia_list = response;
+            this.sort()
             this.episode_loaded = true;
           });
       })
@@ -48,6 +50,19 @@ export class EpisodeComponent {
       trivia: ['', Validators.required]
     })
 
+  }
+
+  onSortSelection (event: any ) {
+    this.sortBy = event.target.value;
+    this.sort();
+  }
+
+  sort() {
+    if (this.sortBy == 'top') {
+      this.trivia_list.sort((a: any, b: any) => b.score - a.score)
+    } else {
+      this.trivia_list.sort((a: any, b: any) => Date.parse(b.createdDtm) - Date.parse(a.createdDtm))
+    }
   }
 
   logout(){
@@ -68,6 +83,7 @@ export class EpisodeComponent {
         this.route.snapshot.paramMap.get('id'))
         .subscribe( (response) => {
           this.trivia_list = response;
+          this.sort()
         });
     },
       error => {
@@ -90,6 +106,7 @@ export class EpisodeComponent {
         this.route.snapshot.paramMap.get('id'))
         .subscribe( (response) => {
           this.trivia_list = response;
+          this.sort()
         });
 
       },
@@ -111,6 +128,7 @@ export class EpisodeComponent {
             this.route.snapshot.paramMap.get('id'))
             .subscribe( (response) => {
               this.trivia_list = response;
+              this.sort()
             });
 
         },
