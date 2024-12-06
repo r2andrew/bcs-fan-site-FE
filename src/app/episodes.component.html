@@ -1,55 +1,26 @@
 <div class="bg-image"></div>
 
-<div class="episodesContainer" style="margin-top: 70px; color: white">
-  <div class="row" style="height: 600px">
-    <div class="col-sm-12">
-      <ng-container *ngIf="episodes_loaded">
-      @for(episode of episodes_list;
-        track episode.title) {
-        <div class="card text-black bg-white mb-3"
-             style = "cursor: pointer"
-             [routerLink] = "['/episodes',
-                                episode._id]">
-          <div class="card-header">
-            {{ episode.title }}
-          </div>
-          <div class="card-body">
-            Season:
-            {{ episode.seasonNumber}} <br>
-            Episode Number:
-            {{ episode.episodeNumber }}
-          </div>
-          <div class="card-footer">
-            <span *ngFor="let star of [].constructor(Math.round(episode.imdbRating))">
-              <img src="images/star.png"
-                   style="width:30px; height:30px">
-            </span>
-          </div>
-        </div>
-      }
-      </ng-container>
+<div class="episodesContainer" style="margin-top: 30px; color: white">
 
-      <!-- if loading reviews, show loading wheel -->
-      <div class="" *ngIf="(!episodes_loaded)">
-        <div class="cssload-speeding-wheel"></div>
-      </div>
+  <ng-container *ngIf="episodes_loaded">
 
-    </div> <!-- col -->
-  </div> <!-- row -->
+    <ag-grid-angular
+      class="ag-theme-material-dark"
+      style="height: 1000px; background-color: transparent; padding-top:5px"
+      [pagination]="true"
+      [paginationPageSize]="17"
+      [paginationPageSizeSelector]="false"
+      [rowData]="data"
+      [columnDefs]="headings"
+      [gridOptions]="gridOptions"
+      (rowClicked)="onRowClicked($event)"
+    />
 
-  <div class="row">
-    <div class="col-sm-4">
-      <button class="btn btn-light"
-              (click)="previousPage()">Previous</button>
-    </div>
-    <div class="col-sm-4 text-center align-self-center">
-      Showing page {{ this.page }}
-      of {{ this.totalPages }}
-    </div>
-    <div class="col-sm-4 text-end">
-      <button class="btn btn-light"
-              (click)="nextPage()">Next</button>
-    </div>
+  </ng-container>
+
+  <!-- if loading reviews, show loading wheel -->
+  <div class="" *ngIf="(!episodes_loaded)">
+    <div class="cssload-speeding-wheel"></div>
   </div>
 
 </div> <!-- container -->
