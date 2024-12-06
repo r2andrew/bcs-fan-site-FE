@@ -48,54 +48,98 @@
               {{ trivia.user }}
               </div>
               <div class="col-sm-6 text-end">
+              <span *ngIf="trivia.user == sessionStorage['loggedInUsername']">
+                <button class="btn btn-outline-info"
+                        (click)="updateEditFormValue(trivia.text);
+                                  modalService.open('edit' + trivia._id)">
+                  Edit
+                </button>
+              </span>
               <span *ngIf="((trivia.user == sessionStorage['loggedInUsername']) || (sessionStorage['admin'] == 'true'))">
-                <button class="btn btn-outline-danger" (click)="delete(trivia._id)">Delete</button>
+                <button class="btn btn-outline-danger"
+                        (click)="delete(trivia._id)">
+                  Delete
+                </button>
               </span>
               </div>
             </div>
             <div class="card-body">
               {{ trivia.text }}
             </div>
-            <div class="card-footer row text-end">
+            <div class="card-footer">
+              <div class="row">
+                <div class="col-sm-6" style="font-size: 15px; color: gray">
+                  <span *ngIf="trivia.edited">
+                    edited
+                  </span>
+                </div>
+                <div class="col-sm-6 text-end">
 
-              <!-- user upvoted -->
-              <span *ngIf="trivia.upvotes.includes(sessionStorage['loggedInUsername'])">
-                <img src="images/upvote.png" style="width: 40px">
-                <span style="cursor: default;"> {{ trivia.score }} </span>
-                <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
-                     (click)="vote('down', trivia._id)">
-              </span>
+                  <!-- user upvoted -->
+                  <span *ngIf="trivia.upvotes.includes(sessionStorage['loggedInUsername'])">
+                    <img src="images/upvote.png" style="width: 40px">
+                    <span style="cursor: default;"> {{ trivia.score }} </span>
+                    <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
+                         (click)="vote('down', trivia._id)">
+                  </span>
 
-              <!-- user downvoted -->
-              <span *ngIf="trivia.downvotes.includes(sessionStorage['loggedInUsername'])">
-                <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
-                     (click)="vote('up', trivia._id)">
-                <span style="cursor: default;"> {{ trivia.score }} </span>
-                <img src="images/downvote.png" style="width: 40px">
-              </span>
+                  <!-- user downvoted -->
+                  <span *ngIf="trivia.downvotes.includes(sessionStorage['loggedInUsername'])">
+                    <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
+                         (click)="vote('up', trivia._id)">
+                    <span style="cursor: default;"> {{ trivia.score }} </span>
+                    <img src="images/downvote.png" style="width: 40px">
+                  </span>
 
-              <!-- user not voted -->
-              <span *ngIf="(!(trivia.upvotes.includes(sessionStorage['loggedInUsername'])) &&
-                          (!(trivia.downvotes.includes(sessionStorage['loggedInUsername'])))) &&
-                            sessionStorage['x-access-token']">
-                <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
-                     (click)="vote('up', trivia._id)">
-                <span style="cursor: default;"> {{ trivia.score }} </span>
-                <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
-                     (click)="vote('down', trivia._id)">
-              </span>
+                  <!-- user not voted -->
+                  <span *ngIf="(!(trivia.upvotes.includes(sessionStorage['loggedInUsername'])) &&
+                              (!(trivia.downvotes.includes(sessionStorage['loggedInUsername'])))) &&
+                                sessionStorage['x-access-token']">
+                    <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
+                         (click)="vote('up', trivia._id)">
+                    <span style="cursor: default;"> {{ trivia.score }} </span>
+                    <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
+                         (click)="vote('down', trivia._id)">
+                  </span>
 
-              <!-- no user -->
-              <span *ngIf="!sessionStorage['x-access-token']">
-                <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
-                     (click)="alert('Login to vote!')">
-                {{ trivia.score }}
-                <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
-                     (click)="alert('Login to vote!')">
-              </span>
-
+                  <!-- no user -->
+                  <span *ngIf="!sessionStorage['x-access-token']">
+                    <img src="images/unfilled_upvote.png" style="cursor: pointer; width: 40px"
+                         (click)="alert('Login to vote!')">
+                    {{ trivia.score }}
+                    <img src="images/unfilled_downvote.png" style="cursor: pointer; width: 40px"
+                         (click)="alert('Login to vote!')">
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
+
+          <modal id="edit{{trivia._id}}">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h2>Edit Trivia</h2>
+                  <form [formGroup]="editForm"
+                        (ngSubmit)="edit(trivia._id)">
+                    <div class="form-group">
+                      <textarea name="editedTrivia" id="editedTrivia"
+                                class="form-control"
+                                formControlName="editedTrivia"
+                                [ngClass]="{ 'error' : isInvalid('editForm','editedTrivia')}">>
+                      </textarea>
+                    </div>
+                    <span *ngIf="isIncomplete('editForm', 'editedTrivia')">
+                      You must complete all fields
+                    </span>
+                    <button *ngIf="!isIncomplete('editForm', 'editedTrivia')" class="btn btn-primary"
+                            type="submit"
+                            style="margin-top: 20px">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </modal>
         }
       </div>
     </div>
@@ -119,13 +163,13 @@
             <textarea name="trivia" id="trivia"
                       class="form-control"
                       formControlName="trivia"
-                      [ngClass]="{ 'error' : isInvalid('trivia')}">>
+                      [ngClass]="{ 'error' : isInvalid('triviaForm','trivia')}">>
             </textarea>
           </div>
-          <span *ngIf="isIncomplete()">
+          <span *ngIf="isIncomplete('triviaForm', 'trivia')">
             You must complete all fields
           </span>
-          <button *ngIf="!isIncomplete()" class="btn btn-primary"
+          <button *ngIf="!isIncomplete('triviaForm', 'trivia')" class="btn btn-primary"
                   type="submit"
                   style="margin-top: 20px">Submit</button>
         </form>
