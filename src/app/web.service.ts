@@ -32,6 +32,19 @@ export class WebService{
         id + "/trivias", postData, httpOptions);
     }
 
+  editTrivia(eId: any, tId: any, trivia: any, token:any) {
+    let postData = new FormData();
+    postData.append("text", trivia.editedTrivia);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'x-access-token': token
+      })
+    };
+    return this.http.patch<any>(
+      'http://localhost:5000/api/v1.0/episodes/' +
+      eId + "/trivias/" + tId, postData, httpOptions);
+  }
+
   voteTrivia(eId: any, tId: any, voteDirection: string, token: any) {
       const httpOptions = {
         headers: new HttpHeaders({

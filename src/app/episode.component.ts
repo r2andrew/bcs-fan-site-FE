@@ -7,6 +7,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
 import {ModalService} from './modal.service';
 import {ModalComponent} from './modal.component';
+import {subscribeOn} from 'rxjs';
 
 
 @Component({
@@ -21,6 +22,7 @@ export class EpisodeComponent {
   episode_list: any;
   trivia_list: any;
   triviaForm: any;
+  editForm: any;
   episode_loaded: boolean = false;
   sortBy: string = 'new'
 
@@ -40,16 +42,24 @@ export class EpisodeComponent {
           .subscribe( (response) => {
             this.trivia_list = response;
             this.sort()
+            this.processIfEdited()
             this.episode_loaded = true;
           });
       })
 
-
-
     this.triviaForm = this.formBuilder.group( {
       trivia: ['', Validators.required]
     })
+    this.editForm = this.formBuilder.group({
+      editedTrivia: ['', Validators.required]
+    })
 
+  }
+
+  updateEditFormValue(editedValue: any) {
+    this.editForm = this.formBuilder.group({
+      editedTrivia: [editedValue, Validators.required]
+    })
   }
 
   onSortSelection (event: any ) {
@@ -84,6 +94,7 @@ export class EpisodeComponent {
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
+          this.processIfEdited()
         });
     },
       error => {
@@ -91,6 +102,41 @@ export class EpisodeComponent {
         this.logout();
         this.modalService.close();
       })
+  }
+
+  edit(tId:any) {
+    this.webService.editTrivia(
+      this.route.snapshot.paramMap.get('id'),
+      tId,
+      this.editForm.value,
+      sessionStorage['x-access-token']
+    ).subscribe((response) => {
+      this.editForm.reset();
+      this.modalService.close();
+
+      this.webService.getTrivias(
+        this.route.snapshot.paramMap.get('id'))
+        .subscribe( (response) => {
+          this.trivia_list = response;
+          this.sort()
+          this.processIfEdited()
+        });
+    },
+      error => {
+        alert('Session Expired, please log in again')
+        // this.logout()
+        this.modalService.close()
+      })
+  }
+
+  processIfEdited() {
+    for (var trivia= 0; trivia < this.trivia_list.length; trivia++) {
+      if (this.trivia_list[trivia]['createdDtm'] != this.trivia_list[trivia]['modifiedDtm']) {
+        this.trivia_list[trivia] = Object.assign({}, this.trivia_list[trivia], {edited: true})
+      } else {
+        this.trivia_list[trivia] = Object.assign({}, this.trivia_list[trivia], {edited: false})
+      }
+    }
   }
 
   onSubmit() {
@@ -107,6 +153,7 @@ export class EpisodeComponent {
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
+          this.processIfEdited()
         });
 
       },
@@ -129,6 +176,7 @@ export class EpisodeComponent {
             .subscribe( (response) => {
               this.trivia_list = response;
               this.sort()
+              this.processIfEdited()
             });
 
         },
@@ -138,17 +186,15 @@ export class EpisodeComponent {
         });
   }
 
-  isInvalid(control: any) {
-    return this.triviaForm.controls[control].invalid &&
-      this.triviaForm.controls[control].touched;
+  isInvalid(form: keyof EpisodeComponent, control: string) {
+    return this[form].controls[control].invalid
   }
-
-  isUntouched() {
-    return this.triviaForm.controls.trivia.pristine
+  isUntouched(form: keyof EpisodeComponent, control: string) {
+    return this[form].controls[control].pristine
   }
-  isIncomplete() {
-    return this.isInvalid('trivia') ||
-      this.isUntouched();
+  isIncomplete(form: keyof EpisodeComponent, control: string) {
+    return this.isInvalid(form, control) ||
+      this.isUntouched(form, control);
   }
 
   protected readonly Math = Math;
