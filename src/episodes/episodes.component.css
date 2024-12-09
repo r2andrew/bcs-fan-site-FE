@@ -9,7 +9,6 @@
   background-image: url(../assets/paint.jpg);
   background-repeat: no-repeat;
 }
-
 .episodesContainer {
   position: absolute;
   margin-left: auto;
@@ -18,7 +17,6 @@
   top: 5%;
   left: 35%;
 }
-
 .ag-theme-material-dark {
   --ag-font-size: 17px;
   --ag-font-family: roboto;

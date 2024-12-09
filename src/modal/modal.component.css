@@ -1,15 +1,9 @@
-/* MODAL STYLES
--------------------------------*/
 modal {
-  /* modals are hidden by default */
   display: none;
 }
-
 body.modal-open {
-  /* body overflow is hidden to hide main scrollbar when modal window is open */
   overflow: hidden;
 }
-
 .modal-backdrop {
   opacity: 0.7 !important;
 }

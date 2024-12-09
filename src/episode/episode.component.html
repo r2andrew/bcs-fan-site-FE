@@ -43,6 +43,7 @@
       <div class="col-sm-12">
         @for ( trivia of trivia_list; track trivia ) {
           <div class="card mb-3 bg-dark text-white" style="--bs-bg-opacity: 0.9">
+
             <div class="card-header row">
               <div class="col-sm-6 align-content-center">
               <span *ngIf="trivia.userBanned" style="color: red">
@@ -76,9 +77,11 @@
               </span>
               </div>
             </div>
+
             <div class="card-body">
               {{ trivia.text }}
             </div>
+
             <div class="card-footer">
               <div class="row">
                 <div class="col-sm-6" style="font-size: 15px; color: gray">
@@ -132,7 +135,9 @@
             <div class="container modalContainer">
               <div class="row">
                 <div class="col-sm-12">
-                  <h2 class="text-end">Edit Trivia</h2>
+                  <h2 class="text-end">
+                    Edit Trivia
+                  </h2>
                   <form [formGroup]="editForm"
                         (ngSubmit)="edit(trivia._id)">
                     <div class="form-group">
@@ -165,29 +170,31 @@
   </div>
 
   <modal id="submitModal">
-  <div class="container modalContainer">
-    <div class="row">
-      <div class="col-sm-12"
-           *ngIf="sessionStorage['x-access-token']">
-        <h2 class="text-end">Submit Trivia</h2>
-        <form [formGroup]="triviaForm"
-              (ngSubmit)="onSubmit()">
-          <div class="form-group">
-            <textarea name="trivia" id="trivia"
-                      class="form-control"
-                      formControlName="trivia"
-                      [ngClass]="{ 'error' : isInvalid('triviaForm','trivia')}">>
-            </textarea>
-          </div>
-          <div *ngIf="isIncomplete('triviaForm', 'trivia')" class="text-center text-danger formIncompleteText">
-            ! You must complete all fields
-          </div>
-          <button *ngIf="!isIncomplete('triviaForm', 'trivia')" class="btn btn-secondary w-100"
-                  type="submit"
-                  style="margin-top: 20px">Submit</button>
-        </form>
+    <div class="container modalContainer">
+      <div class="row">
+        <div class="col-sm-12"
+             *ngIf="sessionStorage['x-access-token']">
+          <h2 class="text-end">
+            Submit Trivia
+          </h2>
+          <form [formGroup]="triviaForm"
+                (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <textarea name="trivia" id="trivia"
+                        class="form-control"
+                        formControlName="trivia"
+                        [ngClass]="{ 'error' : isInvalid('triviaForm','trivia')}">>
+              </textarea>
+            </div>
+            <div *ngIf="isIncomplete('triviaForm', 'trivia')" class="text-center text-danger formIncompleteText">
+              ! You must complete all fields
+            </div>
+            <button *ngIf="!isIncomplete('triviaForm', 'trivia')" class="btn btn-secondary w-100"
+                    type="submit"
+                    style="margin-top: 20px">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
   </modal>
 </div>

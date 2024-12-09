@@ -1,5 +1,4 @@
 .error { background-color: #fff0f0 }
-
 .bg-image {
   margin-top: -30px;
   margin-left: -0px;
@@ -11,7 +10,6 @@
   background-image: url(../assets/phone.jpg);
   background-repeat: no-repeat;
 }
-
 .episodeContainer {
   position: absolute;
   margin-left: auto;
@@ -26,7 +24,6 @@
   background-color: rgba(0,0,0,0.9);
   color: white;
 }
-
 .triviasContainer {
   margin-top: 30px;
   max-height: 700px;

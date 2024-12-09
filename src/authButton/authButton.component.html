@@ -1,9 +1,9 @@
 <ng-container *ngIf="!sessionStorage['x-access-token']">
   <span style="padding-right: 10px">
-  <button class="btn btn-secondary"
-          (click)="modalService.open('login')">
-    Log in
-  </button>
+    <button class="btn btn-secondary"
+            (click)="modalService.open('login')">
+      Log in
+    </button>
   </span>
   <button class="btn btn-secondary"
           (click)="modalService.open('register')">
@@ -22,7 +22,9 @@
   <div class="container modalContainer" style="height: 340px">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-end">Login</h2>
+        <h2 class="text-end">
+          Login
+        </h2>
         <form [formGroup]="loginForm"
               (ngSubmit) = "login()">
           <div class="form-group">
@@ -56,7 +58,9 @@
   <div class="container modalContainer" style="height: 520px;">
     <div class="row">
       <div class="col-sm-12">
-        <h2 class="text-end">Register</h2>
+        <h2 class="text-end">
+          Register
+        </h2>
         <form [formGroup]="registerForm"
               (ngSubmit) = "register()">
           <div class="form-group">
