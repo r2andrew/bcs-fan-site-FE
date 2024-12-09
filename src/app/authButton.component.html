@@ -1,14 +1,20 @@
-<button class="btn btn-outline-light"
-        (click)="modalService.open('login')"
-        *ngIf="!sessionStorage['x-access-token']">
-  Log in
-</button>
+<ng-container *ngIf="!sessionStorage['x-access-token']">
+  <button class="btn btn-outline-light"
+          (click)="modalService.open('login')">
+    Log in
+  </button>
+  <button class="btn btn-outline-light"
+          (click)="modalService.open('register')">
+    Register
+  </button>
+</ng-container>
 
-<button class="btn btn-outline-light"
-        (click)="logout()"
-        *ngIf="sessionStorage['x-access-token']">
-  Log out
-</button>
+<ng-container *ngIf="sessionStorage['x-access-token']">
+  <button class="btn btn-outline-light"
+          (click)="logout()">
+    Log out
+  </button>
+</ng-container>
 
 <modal id="login" class="text-black">
   <div class="container" style="margin-top: 50px;">
@@ -21,18 +27,64 @@
             <label for="username">
               Username</label>
             <textarea name="username" id="username" class="form-control" formControlName="username"
-                      [ngClass]="{ 'error' : isInvalid('username') }"></textarea>
+                      [ngClass]="{ 'error' : isInvalidLogin('username') }"></textarea>
           </div>
           <div class="form-group">
             <label for="password">
               Password</label>
             <textarea name="password" id="password" class="form-control" formControlName="password"
-                      [ngClass]="{ 'error' : isInvalid('password') }"></textarea>
+                      [ngClass]="{ 'error' : isInvalidLogin('password') }"></textarea>
           </div>
-          <span *ngIf="isIncomplete()">
+          <span *ngIf="isIncompleteLogin()">
           You must complete all fields
           </span>
-          <button *ngIf="!isIncomplete()" class="btn btn-danger"
+          <button *ngIf="!isIncompleteLogin()" class="btn btn-danger"
+                  type="submit"
+                  style="margin-top: 20px">Submit</button>
+          <span *ngIf="errorMessage">
+            Error logging in : {{errorMessage}}
+          </span>
+        </form>
+      </div>
+    </div>
+  </div>
+</modal>
+
+<modal id="register" class="text-black">
+  <div class="container" style="margin-top: 50px;">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Register</h2>
+        <form [formGroup]="registerForm"
+              (ngSubmit) = "register()">
+          <div class="form-group">
+            <label for="username">
+              Name</label>
+            <textarea name="username" id="name" class="form-control" formControlName="name"
+                      [ngClass]="{ 'error' : isInvalidRegister('name') }"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="username">
+              Username</label>
+            <textarea name="username" id="username" class="form-control" formControlName="username"
+                      [ngClass]="{ 'error' : isInvalidRegister('username') }"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="username">
+              Email</label>
+            <textarea name="username" id="email" class="form-control" formControlName="email"
+                      [ngClass]="{ 'error' : isInvalidRegister('email') }"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="password">
+              Password</label>
+            <textarea name="password" id="password" class="form-control" formControlName="password"
+                      [ngClass]="{ 'error' : isInvalidRegister('password') }"></textarea>
+          </div>
+          <span *ngIf="isIncompleteRegister()">
+          You must complete all fields
+          </span>
+          <button *ngIf="!isIncompleteRegister()" class="btn btn-danger"
                   type="submit"
                   style="margin-top: 20px">Submit</button>
           <span *ngIf="errorMessage">
