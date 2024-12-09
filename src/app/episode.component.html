@@ -64,6 +64,12 @@
                   Delete
                 </button>
               </span>
+              <span *ngIf="sessionStorage['admin'] == 'true' && trivia.user !== sessionStorage['loggedInUsername']">
+                <button class="btn btn-outline-success"
+                        (click)="ban(trivia.user)">
+                  Ban
+                </button>
+              </span>
               </div>
             </div>
             <div class="card-body">

@@ -124,7 +124,7 @@ export class EpisodeComponent {
     },
       error => {
         alert('Session Expired, please log in again')
-        // this.logout()
+        this.logout()
         this.modalService.close()
       })
   }
@@ -170,7 +170,6 @@ export class EpisodeComponent {
       tId,
       sessionStorage['x-access-token'])
       .subscribe( (response) => {
-
           this.webService.getTrivias(
             this.route.snapshot.paramMap.get('id'))
             .subscribe( (response) => {
@@ -178,12 +177,30 @@ export class EpisodeComponent {
               this.sort()
               this.processIfEdited()
             });
-
         },
         error => {
           alert('Session Expired, please log in again')
           this.logout()
         });
+  }
+
+  ban(uId: string) {
+    this.webService.ban(
+      uId,
+      sessionStorage['x-access-token']
+    ).subscribe((response) => {
+      this.webService.getTrivias(
+        this.route.snapshot.paramMap.get('id'))
+        .subscribe( (response) => {
+          this.trivia_list = response;
+          this.sort()
+          this.processIfEdited()
+        })
+    },
+      error => {
+        alert('Session Expired, please log in again')
+        // this.logout()
+      })
   }
 
   isInvalid(form: keyof EpisodeComponent, control: string) {
