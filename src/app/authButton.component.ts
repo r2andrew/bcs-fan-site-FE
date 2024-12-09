@@ -13,6 +13,7 @@ import {ModalComponent} from './modal.component';
 })
 export class AuthButtonComponent {
   loginForm: any;
+  errorMessage: any;
   constructor(private webService: WebService,
               public modalService: ModalService,
               private formBuilder: FormBuilder) {}
@@ -26,6 +27,7 @@ export class AuthButtonComponent {
   }
 
   login() {
+    this.errorMessage = ''
     this.webService.login(
       this.loginForm.value)
       .subscribe(response => {
@@ -38,7 +40,7 @@ export class AuthButtonComponent {
 
         },
       error => {
-        console.log('error logging in')
+        this.errorMessage = error.error.message
       });
   }
 
