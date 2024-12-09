@@ -199,7 +199,7 @@ export class EpisodeComponent {
     },
       error => {
         alert('Session Expired, please log in again')
-        // this.logout()
+        this.logout()
       })
   }
 

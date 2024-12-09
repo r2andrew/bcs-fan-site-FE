@@ -22,11 +22,11 @@
       </div>
     </div>
 
-    <span *ngIf="!sessionStorage['x-access-token']">
-        Login to leave trivia
-    </span>
-    <div class="row w-100 p-2" style="margin-top: 20px" *ngIf="sessionStorage['x-access-token']">
-      <button class="btn btn-dark me-2" (click)="modalService.open('submitModal')">Submit Trivia</button>
+    <div class="row w-100 p-2" style="margin-top: 20px">
+      <button class="btn btn-dark me-2"
+              (click)="(sessionStorage['x-access-token']? modalService.open('submitModal'): alert('Login to submit trivia!'))">
+        Submit Trivia
+      </button>
     </div>
 
     <div class="text-end">
