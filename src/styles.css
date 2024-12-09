@@ -1,11 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
 html, body {
   height: 100% !important;
   width: 100% !important;
   overflow: hidden !important;
   background-color: rgb(33,37,41) !important;
 }
-
+.modalContainer {
+  padding: 20px;
+  background-color: rgb(33,37,41);
+  color: white;
+}
+.formIncompleteText {
+  font-style: italic;
+  font-size: 20px;
+  padding-top: 30px
+}
 /*loading wheel*/
 .cssload-speeding-wheel {
   content: "";
@@ -25,35 +33,30 @@ html, body {
   -webkit-animation: cssload-spin 500ms infinite linear;
   -moz-animation: cssload-spin 500ms infinite linear;
 }
-
 @keyframes cssload-spin {
   100% {
     transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-o-keyframes cssload-spin {
   100% {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-ms-keyframes cssload-spin {
   100% {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes cssload-spin {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-moz-keyframes cssload-spin {
   100% {
     -moz-transform: rotate(360deg);

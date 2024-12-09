@@ -1,9 +1,6 @@
 <div class="bg-image"></div>
-
 <div class="episodesContainer" style="margin-top: 30px; color: white">
-
   <ng-container *ngIf="episodes_loaded">
-
     <ag-grid-angular
       class="ag-theme-material-dark"
       style="height: 1000px; background-color: transparent; padding-top:5px"
@@ -15,12 +12,9 @@
       [gridOptions]="gridOptions"
       (rowClicked)="onRowClicked($event)"
     />
-
   </ng-container>
-
   <!-- if loading reviews, show loading wheel -->
   <div class="" *ngIf="(!episodes_loaded)">
     <div class="cssload-speeding-wheel"></div>
   </div>
-
-</div> <!-- container -->
+</div>

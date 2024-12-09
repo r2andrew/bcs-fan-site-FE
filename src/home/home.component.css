@@ -6,3 +6,12 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.centerColumn {
+  padding-top: 500px;
+  padding-left: 0;
+  color:black;
+  background-color: white;
+  max-width: 180px;
+  overflow: hidden
+}

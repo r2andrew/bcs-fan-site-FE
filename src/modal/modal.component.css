@@ -1,0 +1,9 @@
+modal {
+  display: none;
+}
+body.modal-open {
+  overflow: hidden;
+}
+.modal-backdrop {
+  opacity: 0.7 !important;
+}

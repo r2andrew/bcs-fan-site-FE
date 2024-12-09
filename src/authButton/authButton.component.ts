@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import {WebService} from './web.service';
+import {WebService} from '../app/web.service';
 import {FormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
-import {ModalService} from './modal.service';
+import {ModalService} from '../modal/modal.service';
 import {CommonModule} from '@angular/common';
-import {ModalComponent} from './modal.component';
+import {ModalComponent} from '../modal/modal.component';
+
 @Component({
   selector: 'auth-button',
-  templateUrl: 'authbutton.component.html',
-  styleUrl: 'authbutton.component.css',
+  templateUrl: 'authButton.component.html',
+  styleUrl: 'authButton.component.css',
   imports: [ReactiveFormsModule, CommonModule, ModalComponent],
   providers: [WebService, ModalService],
   standalone: true
@@ -16,6 +17,7 @@ export class AuthButtonComponent {
   loginForm: any;
   registerForm: any;
   errorMessage: any;
+
   constructor(private webService: WebService,
               public modalService: ModalService,
               private formBuilder: FormBuilder) {}
@@ -66,8 +68,8 @@ export class AuthButtonComponent {
   register() {
     this.errorMessage = ''
     this.webService.register(
-      this.registerForm.value
-    ).subscribe(response => {
+      this.registerForm.value)
+      .subscribe(response => {
       this.registerForm.reset();
       this.modalService.close();
       alert('User successfully created, you may login')
@@ -88,9 +90,7 @@ export class AuthButtonComponent {
         sessionStorage['loggedInUsername'] = response['user']['username']
         sessionStorage['loggedInName'] = response['user']['name']
         sessionStorage['admin'] = response['user']['admin']
-
-        },
-      error => {
+        }, error => {
         this.errorMessage = error.error.error
         setTimeout(() => this.errorMessage = '', 3000)
       });
@@ -98,8 +98,7 @@ export class AuthButtonComponent {
 
   logout() {
     this.webService.logout(
-      sessionStorage['x-access-token']
-    )
+      sessionStorage['x-access-token'])
       .subscribe(response => {
           sessionStorage.removeItem('x-access-token')
           sessionStorage.removeItem('loggedInUsername')
@@ -114,6 +113,5 @@ export class AuthButtonComponent {
           sessionStorage.removeItem('admin')
         });
   }
-
   protected readonly sessionStorage = sessionStorage;
 }

@@ -1,23 +1,21 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataService } from './data.service';
-import { WebService } from './web.service';
+import { WebService } from '../app/web.service';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
-import {ModalService} from './modal.service';
-import {ModalComponent} from './modal.component';
-import {subscribeOn} from 'rxjs';
-
+import {ModalService} from '../modal/modal.service';
+import {ModalComponent} from '../modal/modal.component';
 
 @Component({
   selector: 'episode',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, ModalComponent],
-  providers: [DataService, WebService, ModalService],
+  providers: [WebService, ModalService],
   templateUrl: './episode.component.html',
   styleUrl: './episode.component.css'
 })
+
 export class EpisodeComponent {
   episode_list: any;
   trivia_list: any;
@@ -26,8 +24,7 @@ export class EpisodeComponent {
   episode_loaded: boolean = false;
   sortBy: string = 'new'
 
-  constructor( public dataService: DataService,
-               private webService: WebService,
+  constructor( private webService: WebService,
                public modalService: ModalService,
                private route: ActivatedRoute,
                private formBuilder: FormBuilder) {}
@@ -48,18 +45,14 @@ export class EpisodeComponent {
       })
 
     this.triviaForm = this.formBuilder.group( {
-      trivia: ['', Validators.required]
-    })
+      trivia: ['', Validators.required] })
     this.editForm = this.formBuilder.group({
-      editedTrivia: ['', Validators.required]
-    })
-
+      editedTrivia: ['', Validators.required] })
   }
 
   updateEditFormValue(editedValue: any) {
     this.editForm = this.formBuilder.group({
-      editedTrivia: [editedValue, Validators.required]
-    })
+      editedTrivia: [editedValue, Validators.required]  })
   }
 
   onSortSelection (event: any ) {
@@ -68,11 +61,8 @@ export class EpisodeComponent {
   }
 
   sort() {
-    if (this.sortBy == 'top') {
-      this.trivia_list.sort((a: any, b: any) => b.score - a.score)
-    } else {
+    this.sortBy == 'top'? this.trivia_list.sort((a: any, b: any) => b.score - a.score) :
       this.trivia_list.sort((a: any, b: any) => Date.parse(b.createdDtm) - Date.parse(a.createdDtm))
-    }
   }
 
   logout(){
@@ -94,14 +84,12 @@ export class EpisodeComponent {
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
-          this.processIfEdited()
-        });
+          this.processIfEdited()  });
     },
       error => {
       alert('Session Expired, please log in again')
         this.logout();
-        this.modalService.close();
-      })
+        this.modalService.close();  })
   }
 
   edit(tId:any) {
@@ -113,29 +101,24 @@ export class EpisodeComponent {
     ).subscribe((response) => {
       this.editForm.reset();
       this.modalService.close();
-
       this.webService.getTrivias(
         this.route.snapshot.paramMap.get('id'))
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
-          this.processIfEdited()
-        });
+          this.processIfEdited()  });
     },
       error => {
         alert('Session Expired, please log in again')
         this.logout()
-        this.modalService.close()
-      })
+        this.modalService.close() })
   }
 
   processIfEdited() {
     for (var trivia= 0; trivia < this.trivia_list.length; trivia++) {
-      if (this.trivia_list[trivia]['createdDtm'] != this.trivia_list[trivia]['modifiedDtm']) {
-        this.trivia_list[trivia] = Object.assign({}, this.trivia_list[trivia], {edited: true})
-      } else {
+      this.trivia_list[trivia]['createdDtm'] != this.trivia_list[trivia]['modifiedDtm'] ?
+        this.trivia_list[trivia] = Object.assign({}, this.trivia_list[trivia], {edited: true}) :
         this.trivia_list[trivia] = Object.assign({}, this.trivia_list[trivia], {edited: false})
-      }
     }
   }
 
@@ -147,21 +130,17 @@ export class EpisodeComponent {
       .subscribe( (response) => {
         this.triviaForm.reset();
         this.modalService.close();
-
         this.webService.getTrivias(
         this.route.snapshot.paramMap.get('id'))
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
-          this.processIfEdited()
-        });
-
+          this.processIfEdited()  });
       },
         error => {
           alert('Session Expired, please log in again')
           this.logout()
-          this.modalService.close();
-        });
+          this.modalService.close();  });
   }
 
   delete(tId: string){
@@ -175,18 +154,16 @@ export class EpisodeComponent {
             .subscribe( (response) => {
               this.trivia_list = response;
               this.sort()
-              this.processIfEdited()
-            });
+              this.processIfEdited()  });
         },
         error => {
           alert('Session Expired, please log in again')
-          this.logout()
-        });
+          this.logout() });
   }
 
-  ban(uId: string) {
+  ban(username: string) {
     this.webService.ban(
-      uId,
+      username,
       sessionStorage['x-access-token']
     ).subscribe((response) => {
       this.webService.getTrivias(
@@ -194,13 +171,11 @@ export class EpisodeComponent {
         .subscribe( (response) => {
           this.trivia_list = response;
           this.sort()
-          this.processIfEdited()
-        })
+          this.processIfEdited()  })
     },
       error => {
         alert('Session Expired, please log in again')
-        // this.logout()
-      })
+        this.logout() })
   }
 
   isInvalid(form: keyof EpisodeComponent, control: string) {
