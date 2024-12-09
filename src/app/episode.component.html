@@ -45,6 +45,9 @@
           <div class="card mb-3 bg-dark text-white" style="--bs-bg-opacity: 0.9">
             <div class="card-header row">
               <div class="col-sm-6 align-content-center">
+              <span *ngIf="trivia.userBanned" style="color: red">
+                🛇
+              </span>
               {{ trivia.user }}
               </div>
               <div class="col-sm-6 text-end">
