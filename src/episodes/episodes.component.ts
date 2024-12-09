@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, RouterModule} from '@angular/router';
-import { DataService } from './data.service';
 import { CommonModule } from '@angular/common';
-import { WebService } from './web.service';
+import { WebService } from '../app/web.service';
 import jsonData from '../assets/episodes.json';
 import {AgGridAngular} from 'ag-grid-angular';
 import { ColDef, GridOptions } from 'ag-grid-community';
@@ -11,7 +10,7 @@ import { ColDef, GridOptions } from 'ag-grid-community';
 @Component({
   selector: 'episodes',
   imports: [RouterModule, CommonModule, AgGridAngular],
-  providers: [DataService, WebService],
+  providers: [WebService],
   templateUrl: './episodes.component.html',
   styleUrl: './episodes.component.css'
 })
@@ -55,8 +54,7 @@ export class EpisodesComponent {
   }
 
   protected readonly Math = Math;
-  constructor(public dataService: DataService,
-              private webService: WebService,
+  constructor(private webService: WebService,
               private router: Router) {}
 
   ngOnInit() {

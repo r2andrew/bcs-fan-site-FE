@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { DataService } from './data.service';
-import { WebService } from './web.service';
+import { WebService } from '../app/web.service';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, Validators } from '@angular/forms';
-import {ModalService} from './modal.service';
-import {ModalComponent} from './modal.component';
+import {ModalService} from '../modal/modal.service';
+import {ModalComponent} from '../modal/modal.component';
 import {subscribeOn} from 'rxjs';
 
 
@@ -14,7 +13,7 @@ import {subscribeOn} from 'rxjs';
   selector: 'episode',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule, ModalComponent],
-  providers: [DataService, WebService, ModalService],
+  providers: [WebService, ModalService],
   templateUrl: './episode.component.html',
   styleUrl: './episode.component.css'
 })
@@ -26,8 +25,7 @@ export class EpisodeComponent {
   episode_loaded: boolean = false;
   sortBy: string = 'new'
 
-  constructor( public dataService: DataService,
-               private webService: WebService,
+  constructor( private webService: WebService,
                public modalService: ModalService,
                private route: ActivatedRoute,
                private formBuilder: FormBuilder) {}

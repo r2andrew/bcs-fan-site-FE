@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {AuthButtonComponent} from './authButton.component';
+import {AuthButtonComponent} from '../authButton/authButton.component';
 @Component({
   selector: 'navigation',
   standalone: true,

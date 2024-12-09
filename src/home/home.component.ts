@@ -6,7 +6,7 @@ import {RouterModule} from '@angular/router';
     standalone: true,
     templateUrl: './home.component.html',
     imports: [
-        NgForOf, RouterModule
+        RouterModule
     ],
     styleUrl: './home.component.css'
 })

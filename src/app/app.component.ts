@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import jsonData from '../assets/episodes.json'
-import { NavComponent } from './nav.component'
+import { NavComponent } from '../nav/nav.component'
 
 
 @Component({

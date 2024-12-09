@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import {WebService} from './web.service';
+import {WebService} from '../app/web.service';
 import {FormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
-import {ModalService} from './modal.service';
+import {ModalService} from '../modal/modal.service';
 import {CommonModule} from '@angular/common';
-import {ModalComponent} from './modal.component';
+import {ModalComponent} from '../modal/modal.component';
 @Component({
   selector: 'auth-button',
-  templateUrl: 'authbutton.component.html',
-  styleUrl: 'authbutton.component.css',
+  templateUrl: 'authButton.component.html',
+  styleUrl: 'authButton.component.css',
   imports: [ReactiveFormsModule, CommonModule, ModalComponent],
   providers: [WebService, ModalService],
   standalone: true
