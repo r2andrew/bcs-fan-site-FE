@@ -7,12 +7,14 @@ import {ModalComponent} from './modal.component';
 @Component({
   selector: 'auth-button',
   templateUrl: 'authbutton.component.html',
+  styleUrl: 'authbutton.component.css',
   imports: [ReactiveFormsModule, CommonModule, ModalComponent],
   providers: [WebService, ModalService],
   standalone: true
 })
 export class AuthButtonComponent {
   loginForm: any;
+  registerForm: any;
   errorMessage: any;
   constructor(private webService: WebService,
               public modalService: ModalService,
@@ -23,7 +25,56 @@ export class AuthButtonComponent {
       username: ['', Validators.required],
       password: ['', Validators.required]
     })
-    console.log(JSON.stringify(sessionStorage['loggedInUser']))
+    this.registerForm = this.formBuilder.group( {
+      name: ['', Validators.required],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      email: ['', Validators.required]
+    })
+  }
+
+  isInvalidLogin(control: any) {
+    return this.loginForm.controls[control].invalid &&
+      this.loginForm.controls[control].touched;
+  }
+  isUntouchedLogin() {
+    return this.loginForm.controls.username.pristine ||
+      this.loginForm.controls.password.pristine
+  }
+  isIncompleteLogin() {
+    return this.isInvalidLogin('username') ||
+      this.isInvalidLogin('password') ||
+      this.isUntouchedLogin();
+  }
+
+  isInvalidRegister(control: any) {
+    return this.registerForm.controls[control].invalid &&
+      this.registerForm.controls[control].touched;
+  }
+  isUntouchedRegister() {
+    return this.registerForm.controls.username.pristine ||
+      this.registerForm.controls.password.pristine
+  }
+  isIncompleteRegister() {
+    return this.isInvalidRegister('name') ||
+      this.isInvalidRegister('username') ||
+      this.isInvalidRegister('password') ||
+      this.isInvalidRegister('email') ||
+      this.isUntouchedRegister();
+  }
+
+  register() {
+    this.errorMessage = ''
+    this.webService.register(
+      this.registerForm.value
+    ).subscribe(response => {
+      this.registerForm.reset();
+      this.modalService.close();
+      alert('User successfully created, you may login')
+    }, error => {
+      this.errorMessage = error.error.error
+      setTimeout(() => this.errorMessage = '', 3000)
+    })
   }
 
   login() {
@@ -40,7 +91,8 @@ export class AuthButtonComponent {
 
         },
       error => {
-        this.errorMessage = error.error.message
+        this.errorMessage = error.error.error
+        setTimeout(() => this.errorMessage = '', 3000)
       });
   }
 
@@ -61,22 +113,6 @@ export class AuthButtonComponent {
           sessionStorage.removeItem('loggedInName')
           sessionStorage.removeItem('admin')
         });
-  }
-
-
-  isInvalid(control: any) {
-    return this.loginForm.controls[control].invalid &&
-      this.loginForm.controls[control].touched;
-  }
-
-  isUntouched() {
-    return this.loginForm.controls.username.pristine ||
-      this.loginForm.controls.password.pristine
-  }
-  isIncomplete() {
-    return this.isInvalid('username') ||
-    this.isInvalid('password') ||
-      this.isUntouched();
   }
 
   protected readonly sessionStorage = sessionStorage;

@@ -69,6 +69,16 @@ export class WebService{
     )
   }
 
+  register(form: any) {
+    let postData = new FormData();
+    postData.append('name', form.name)
+    postData.append('username', form.username)
+    postData.append('password', form.password)
+    postData.append('email', form.email)
+    return this.http.post<any>(
+      'http://localhost:5000/api/v1.0/register', postData);
+  }
+
   login(creds: any) {
     let authData = 'Basic ' + btoa(creds.username + ':' + creds.password);
     const httpOptions = {
@@ -90,5 +100,16 @@ export class WebService{
     };
     return this.http.get<any>('http://localhost:5000/api/v1.0/logout',
       httpOptions)
+  }
+
+  ban(uId: any, token: any) {
+    console.log(token)
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'x-access-token': token
+      })
+    };
+    return this.http.patch<any>('http://localhost:5000/api/v1.0/ban/' + uId,
+      '', httpOptions)
   }
 }
