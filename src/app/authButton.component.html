@@ -31,10 +31,13 @@
           </div>
           <span *ngIf="isIncomplete()">
           You must complete all fields
-        </span>
+          </span>
           <button *ngIf="!isIncomplete()" class="btn btn-danger"
                   type="submit"
                   style="margin-top: 20px">Submit</button>
+          <span *ngIf="errorMessage">
+            Error logging in : {{errorMessage}}
+          </span>
         </form>
       </div>
     </div>
