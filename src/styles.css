@@ -6,6 +6,18 @@ html, body {
   background-color: rgb(33,37,41) !important;
 }
 
+.modalContainer {
+  padding: 20px;
+  background-color: rgb(33,37,41);
+  color: white;
+}
+
+.formIncompleteText {
+  font-style: italic;
+  font-size: 20px;
+  padding-top: 30px
+}
+
 /*loading wheel*/
 .cssload-speeding-wheel {
   content: "";
