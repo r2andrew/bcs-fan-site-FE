@@ -50,22 +50,26 @@
               </span>
               {{ trivia.user }}
               </div>
-              <div class="col-sm-6 text-end">
-              <span *ngIf="trivia.user == sessionStorage['loggedInUsername']">
-                <button class="btn btn-outline-info"
+              <div class="col-sm-6 text-end" style="padding-right: 0">
+              <span *ngIf="trivia.user == sessionStorage['loggedInUsername']" style="padding: 0 4px">
+                <button class="btn btn-outline-primary"
                         (click)="updateEditFormValue(trivia.text);
                                   modalService.open('edit' + trivia._id)">
                   Edit
                 </button>
               </span>
-              <span *ngIf="((trivia.user == sessionStorage['loggedInUsername']) || (sessionStorage['admin'] == 'true'))">
+              <span *ngIf="((trivia.user == sessionStorage['loggedInUsername']) || (sessionStorage['admin'] == 'true'))"
+                    style="padding: 0 4px">
                 <button class="btn btn-outline-danger"
                         (click)="delete(trivia._id)">
                   Delete
                 </button>
               </span>
-              <span *ngIf="sessionStorage['admin'] == 'true' && trivia.user !== sessionStorage['loggedInUsername']">
-                <button class="btn btn-outline-success"
+              <span *ngIf="sessionStorage['admin'] == 'true' &&
+                            trivia.user !== sessionStorage['loggedInUsername'] &&
+                             !trivia.userBanned"
+                    style="padding: 0 4px">
+                <button class="btn btn-outline-warning"
                         (click)="ban(trivia.user)">
                   Ban
                 </button>

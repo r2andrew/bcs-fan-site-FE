@@ -1,16 +1,18 @@
 <ng-container *ngIf="!sessionStorage['x-access-token']">
-  <button class="btn btn-outline-light"
+  <span style="padding-right: 10px">
+  <button class="btn btn-secondary"
           (click)="modalService.open('login')">
     Log in
   </button>
-  <button class="btn btn-outline-light"
+  </span>
+  <button class="btn btn-secondary"
           (click)="modalService.open('register')">
     Register
   </button>
 </ng-container>
 
 <ng-container *ngIf="sessionStorage['x-access-token']">
-  <button class="btn btn-outline-light"
+  <button class="btn btn-secondary"
           (click)="logout()">
     Log out
   </button>
