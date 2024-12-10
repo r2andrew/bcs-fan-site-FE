@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "671158ec61e58bf0aa084615",
+    "airDate": "2015-02-08",
+    "episodeNumber": 1,
+    "imdbRating": 8.3,
+    "seasonNumber": 1,
+    "title": "Uno",
+    "trivias": [
+      {
+        "_id": "6751d271b316ca28510ca2f3",
+        "createdDtm": "Thu, 05 Dec 2024 16:18:57 GMT",
+        "downvotes": [
+          "TheRealHowardHamlin"
+        ],
+        "modifiedDtm": "Fri, 06 Dec 2024 19:01:59 GMT",
+        "text": "text",
+        "upvotes": [],
+        "user": "TheRealHowardHamlin"
+      },
+      {
+        "_id": "67531ed0e403fd4d4f6cb102",
+        "createdDtm": "Fri, 06 Dec 2024 15:57:04 GMT",
+        "downvotes": [
+          "TheRealHowardHamlin"
+        ],
+        "modifiedDtm": "Fri, 06 Dec 2024 16:04:22 GMT",
+        "text": "text",
+        "upvotes": [],
+        "user": "TheRealHowardHamlin"
+      }
+    ]
+  }
+]

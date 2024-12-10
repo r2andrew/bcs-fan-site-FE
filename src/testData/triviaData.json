@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "67531ed0e403fd4d4f6cb102",
+    "createdDtm": "Fri, 06 Dec 2024 15:57:04 GMT",
+    "downvotes": [
+      "TheRealHowardHamlin"
+    ],
+    "modifiedDtm": "Fri, 06 Dec 2024 16:04:22 GMT",
+    "score": -1,
+    "text": "text",
+    "upvotes": [],
+    "user": "TheRealHowardHamlin",
+    "userBanned": false,
+    "edited": true
+  },
+  {
+    "_id": "6751d271b316ca28510ca2f3",
+    "createdDtm": "Thu, 05 Dec 2024 16:18:57 GMT",
+    "downvotes": [
+      "TheRealHowardHamlin"
+    ],
+    "modifiedDtm": "Fri, 06 Dec 2024 19:01:59 GMT",
+    "score": -1,
+    "text": "text",
+    "upvotes": [],
+    "user": "TheRealHowardHamlin",
+    "userBanned": false,
+    "edited": true
+  }
+]
