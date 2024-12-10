@@ -120,6 +120,13 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>The homepage of the app</p>
+
+    </p>
 
 
 
@@ -194,7 +201,9 @@
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 import {RouterModule} from &#x27;@angular/router&#x27;;
-
+/**
+ * The homepage of the app
+ */
 @Component({
     selector: &#x27;home&#x27;,
     standalone: true,
@@ -257,7 +266,7 @@ export class HomeComponent { }
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="container-fluid" style="height: 100% ;color:white">  <div class="row">    <!-- Left -->    <div class="col-xxl margin">      <img src="images/left.jpg" style="height: 100%">    </div>    <!-- Centre -->    <div class="col-xxl centerColumn">      <img src="images/bcs_trivia_logo.png"           style="height: 80px; padding-left: 0px; cursor: pointer" [routerLink] = "[\'/episodes\']">      <span style="cursor: pointer" [routerLink] = "[\'/episodes\']">        &nbsp;&nbsp;Click to enter site      </span>    </div>    <!-- Right -->    <div class="col-xxl margin">      <img src="images/right.jpg" style="height: 100%">    </div>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'},{'name': 'TestComponent', 'selector': 'test'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
 </script>

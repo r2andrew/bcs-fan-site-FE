@@ -120,6 +120,13 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Navigation bar header</p>
+
+    </p>
 
 
 
@@ -238,10 +245,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/nav/nav.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/nav/nav.component.ts:19</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A reference to the sessionStorage interface to be used in the HTML part of this component</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -255,6 +268,9 @@
 import { RouterModule } from &#x27;@angular/router&#x27;;
 import {AuthButtonComponent} from &#x27;../authButton/authButton.component&#x27;;
 
+/**
+ * Navigation bar header
+ */
 @Component({
   selector: &#x27;navigation&#x27;,
   standalone: true,
@@ -262,6 +278,10 @@ import {AuthButtonComponent} from &#x27;../authButton/authButton.component&#x27;
   templateUrl: &#x27;./nav.component.html&#x27;
 })
 export class NavComponent {
+  /**
+   * A reference to the sessionStorage interface to be used in the HTML part of this component
+   * @protected
+   */
   protected readonly sessionStorage &#x3D; sessionStorage;
 }
 </code></pre>
@@ -320,7 +340,7 @@ export class NavComponent {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top p-3">  <span class="navbar-brand">    <img src="images/bcs_trivia_logo.png" height="40px">  </span>  <ul class="navbar-nav">    <li class="nav-item">      <a class="nav-link"         [routerLink]="[\'/\']">Home</a>    </li>    <li class="nav-item">      <a class="nav-link"         [routerLink]="[\'/episodes\']">Episodes</a>    </li>  </ul>  <div class="form-inline ms-auto"       style="margin-right: 10px; color: white">    <span style="margin-right: 20px">{{sessionStorage[\'loggedInName\']}}</span>    <auth-button></auth-button>  </div></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'},{'name': 'TestComponent', 'selector': 'test'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NavComponent'};
 </script>

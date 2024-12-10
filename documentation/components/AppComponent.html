@@ -120,6 +120,14 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>The AppComponent of Angular which serves as the foundation
+other components are rendered on top of</p>
+
+    </p>
 
 
 
@@ -240,10 +248,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/app.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/app.component.ts:18</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The title of the app, used in the tab header</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -256,7 +270,10 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 import { RouterOutlet } from &#x27;@angular/router&#x27;;
 import { NavComponent } from &#x27;../nav/nav.component&#x27;
-
+/**
+ * The AppComponent of Angular which serves as the foundation
+ * other components are rendered on top of
+ */
 @Component({
   selector: &#x27;app-root&#x27;,
   imports: [RouterOutlet, NavComponent],
@@ -264,6 +281,9 @@ import { NavComponent } from &#x27;../nav/nav.component&#x27;
   styleUrl: &#x27;./app.component.css&#x27;
 })
 export class AppComponent {
+  /**
+   * The title of the app, used in the tab header
+   */
   title &#x3D; &#x27;bcsFanSiteFE&#x27;;
 }
 </code></pre>
@@ -302,7 +322,7 @@ export class AppComponent {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><navigation></navigation><router-outlet></router-outlet></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'},{'name': 'TestComponent', 'selector': 'test'}];
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthButtonComponent', 'selector': 'auth-button'},{'name': 'EpisodeComponent', 'selector': 'episode'},{'name': 'EpisodesComponent', 'selector': 'episodes'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'ModalComponent', 'selector': 'modal'},{'name': 'NavComponent', 'selector': 'navigation'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

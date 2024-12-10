@@ -5,6 +5,10 @@ import {ModalService} from '../modal/modal.service';
 import {CommonModule} from '@angular/common';
 import {ModalComponent} from '../modal/modal.component';
 
+/**
+ * A component to provide an interface to login,
+ * logout and register
+ */
 @Component({
   selector: 'auth-button',
   templateUrl: 'authButton.component.html',
@@ -14,15 +18,34 @@ import {ModalComponent} from '../modal/modal.component';
   standalone: true
 })
 export class AuthButtonComponent {
+  /**
+   * A form to store login info submitted by the user
+   */
   loginForm: any;
+  /**
+   * A form to store new user info subbmited by the user
+   */
   registerForm: any;
-  errorMessage: any;
+  /**
+   * Store any error message returned by the api for display to the user
+   */
+  errorMessage: string = '';
 
+  /**
+   * Constructor for the AuthButton
+   * @constructor
+   * @param webService Connect to the Web Service
+   * @param modalService Provide function for modal forms
+   * @param formBuilder Integrate with the angular module FormBuilder for easy form management
+   */
   constructor(private webService: WebService,
               public modalService: ModalService,
               private formBuilder: FormBuilder) {}
 
-  ngOnInit() {
+  /**
+   * On page load, define requirements for the login and register forms
+   */
+  ngOnInit(): void {
     this.loginForm = this.formBuilder.group( {
       username: ['', Validators.required],
       password: ['', Validators.required]
@@ -35,37 +58,64 @@ export class AuthButtonComponent {
     })
   }
 
-  isInvalidLogin(control: any) {
+  /**
+   * Check if fields of the Login form are invalid
+   * @param control The form field to validate
+   * @returns A boolean representing if the input fields are invalid
+   */
+  isInvalidLogin(control: any): boolean {
     return this.loginForm.controls[control].invalid &&
       this.loginForm.controls[control].touched;
   }
-  isUntouchedLogin() {
+  /**
+   * Check if fields of the Login form are untouched
+   * @returns A boolean representing if the input fields are untouched
+   */
+  isUntouchedLogin(): boolean {
     return this.loginForm.controls.username.pristine ||
       this.loginForm.controls.password.pristine
   }
-  isIncompleteLogin() {
+  /**
+   * Check if the Login form is incomplete
+   * @returns A booleans representing if the form is incomplete
+   */
+  isIncompleteLogin(): boolean {
     return this.isInvalidLogin('username') ||
       this.isInvalidLogin('password') ||
       this.isUntouchedLogin();
   }
-
-  isInvalidRegister(control: any) {
+  /**
+   * Check if fields of the Register form are invalid
+   * @param control The form field to validate
+   * @returns A boolean representing if the input fields are invalid
+   */
+  isInvalidRegister(control: any): boolean {
     return this.registerForm.controls[control].invalid &&
       this.registerForm.controls[control].touched;
   }
-  isUntouchedRegister() {
+  /**
+   * Check if fields of the Register form are untouched
+   * @returns A boolean representing if the input fields are untouched
+   */
+  isUntouchedRegister(): boolean {
     return this.registerForm.controls.username.pristine ||
       this.registerForm.controls.password.pristine
   }
-  isIncompleteRegister() {
+  /**
+   * Check if the Register form is incomplete
+   * @returns A boolean representing if the form is incomplete
+   */
+  isIncompleteRegister(): boolean {
     return this.isInvalidRegister('name') ||
       this.isInvalidRegister('username') ||
       this.isInvalidRegister('password') ||
       this.isInvalidRegister('email') ||
       this.isUntouchedRegister();
   }
-
-  register() {
+  /**
+   * Submit the details from the Register form to the API
+   */
+  register(): void {
     this.errorMessage = ''
     this.webService.register(
       this.registerForm.value)
@@ -79,7 +129,11 @@ export class AuthButtonComponent {
     })
   }
 
-  login() {
+  /**
+   * Submit the details from the login form to the API
+   * and store token, user data in session storage
+   */
+  login(): void {
     this.errorMessage = ''
     this.webService.login(
       this.loginForm.value)
@@ -96,7 +150,10 @@ export class AuthButtonComponent {
       });
   }
 
-  logout() {
+  /**
+   * Send a request to the API to invalidate the current token, and clear it from storage\
+   */
+  logout(): void {
     this.webService.logout(
       sessionStorage['x-access-token'])
       .subscribe(response => {
@@ -113,5 +170,11 @@ export class AuthButtonComponent {
           sessionStorage.removeItem('admin')
         });
   }
+
+  /**
+   * A reference to the sessionStorage interface to be accessed within the HTML
+   * part of this component
+   * @protected
+   */
   protected readonly sessionStorage = sessionStorage;
 }

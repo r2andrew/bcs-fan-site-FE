@@ -1,6 +1,9 @@
 import { Component, ViewEncapsulation, ElementRef, Input, OnInit, OnDestroy } from '@angular/core';
 import { ModalService } from './modal.service';
 
+/**
+ * Logic associated with modals
+ */
 @Component({
   selector: 'modal',
   templateUrl: 'modal.component.html',
@@ -8,22 +11,36 @@ import { ModalService } from './modal.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ModalComponent implements OnInit, OnDestroy {
+  /**
+   * Optionally accept the elements id in the DOM
+   */
   @Input() id?: string;
+  /**
+   * Boolean to hold if a particular modal is open or not
+   */
   isOpen = false;
+  /**
+   * A reference to the modal within the DOM
+   * @private
+   */
   private element: any;
 
+  /**
+   * A constructor for the modal component
+   * @constructor
+   * @param modalService Connect to the Modal Service
+   * @param el The modals reference in the DOM
+   */
   constructor(private modalService: ModalService, private el: ElementRef) {
     this.element = el.nativeElement;
   }
 
-  ngOnInit() {
-    // add self (this modal instance) to the modal service so it can be opened from any component
+  /**
+   * On page load, add the modal to the DOM
+   */
+  ngOnInit(): void {
     this.modalService.add(this);
-
-    // move element to bottom of page (just before </body>) so it can be displayed above everything else
     document.body.appendChild(this.element);
-
-    // close modal on background click
     this.element.addEventListener('click', (el: any) => {
       if (el.target.className === 'modal') {
         this.close();
@@ -31,21 +48,27 @@ export class ModalComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnDestroy() {
-    // remove self from modal service
+  /**
+   * On page close, remove the modal from the DOM
+   */
+  ngOnDestroy(): void {
     this.modalService.remove(this);
-
-    // remove modal element from html
     this.element.remove();
   }
 
-  open() {
+  /**
+   * Set a modal element to display
+   */
+  open(): void {
     this.element.style.display = 'block';
     document.body.classList.add('modal-open');
     this.isOpen = true;
   }
 
-  close() {
+  /**
+   * Set a modal element to hide
+   */
+  close(): void {
     this.element.style.display = 'none';
     document.body.classList.remove('modal-open');
     this.isOpen = false;

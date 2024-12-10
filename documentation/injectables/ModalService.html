@@ -119,6 +119,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Interface with the modal component</p>
+
+            </p>
 
 
 
@@ -200,14 +207,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="9"
-                                    class="link-to-prism">src/modal/modal.service.ts:9</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="18"
+                                    class="link-to-prism">src/modal/modal.service.ts:18</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Add a form to the DOM</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -218,6 +227,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -232,6 +242,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form to add</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -267,14 +281,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="35"
-                                    class="link-to-prism">src/modal/modal.service.ts:35</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="47"
+                                    class="link-to-prism">src/modal/modal.service.ts:47</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Hide any open modals</p>
+</div>
 
                         <div class="io-description">
                             <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
@@ -304,14 +320,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="24"
-                                    class="link-to-prism">src/modal/modal.service.ts:24</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="37"
+                                    class="link-to-prism">src/modal/modal.service.ts:37</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Display a form</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -322,6 +340,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -336,6 +355,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form to display</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -371,14 +394,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="19"
-                                    class="link-to-prism">src/modal/modal.service.ts:19</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="29"
+                                    class="link-to-prism">src/modal/modal.service.ts:29</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Remove a form from the DOM</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -389,6 +414,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -403,6 +429,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form to remove</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -449,10 +479,16 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/modal/modal.service.ts:7</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/modal/modal.service.ts:12</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>An array to hold the Modals active in the DOM</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -463,41 +499,52 @@
 
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-
 import { ModalComponent } from &#x27;./modal.component&#x27;;
-
+/**
+ * Interface with the modal component
+ */
 @Injectable({ providedIn: &#x27;root&#x27; })
 export class ModalService {
+  /**
+   * An array to hold the Modals active in the DOM
+   * @private
+   */
   private modals: ModalComponent[] &#x3D; [];
 
-  add(modal: ModalComponent) {
-    // ensure component has a unique id attribute
+  /**
+   * Add a form to the DOM
+   * @param modal The form to add
+   */
+  add(modal: ModalComponent): void {
     if (!modal.id || this.modals.find(x &#x3D;&gt; x.id &#x3D;&#x3D;&#x3D; modal.id)) {
       throw new Error(&#x27;modal must have a unique id attribute&#x27;);
     }
-
-    // add modal to array of active modals
     this.modals.push(modal);
   }
 
-  remove(modal: ModalComponent) {
-    // remove modal from array of active modals
+  /**
+   * Remove a form from the DOM
+   * @param modal The form to remove
+   */
+  remove(modal: ModalComponent): void {
     this.modals &#x3D; this.modals.filter(x &#x3D;&gt; x !&#x3D;&#x3D; modal);
   }
 
-  open(id: string) {
-    // open modal specified by id
+  /**
+   * Display a form
+   * @param id The form to display
+   */
+  open(id: string): void {
     const modal &#x3D; this.modals.find(x &#x3D;&gt; x.id &#x3D;&#x3D;&#x3D; id);
-
     if (!modal) {
       throw new Error(&#x60;modal &#x27;${id}&#x27; not found&#x60;);
     }
-
     modal.open();
   }
-
-  close() {
-    // close the modal that is currently open
+  /**
+   * Hide any open modals
+   */
+  close(): void {
     const modal &#x3D; this.modals.find(x &#x3D;&gt; x.isOpen);
     modal?.close();
   }

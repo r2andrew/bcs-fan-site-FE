@@ -119,6 +119,13 @@
         </p>
 
 
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>The WebService provides connections to the backend API</p>
+
+            </p>
 
 
 
@@ -205,12 +212,14 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/web.service.ts:6</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/web.service.ts:14</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>The constructor for the Web Service</p>
+</div>
                             <div>
                                     <b>Parameters :</b>
                                     <table class="params">
@@ -219,6 +228,7 @@
                                                 <td>Name</td>
                                                     <td>Type</td>
                                                 <td>Optional</td>
+                                                    <td>Description</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -233,6 +243,10 @@
                                                             No
                                                     </td>
                                                     
+                                                        <td>
+                                                                <p>Injecting the httpClient to the Web Service</p>
+
+                                                        </td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -268,14 +282,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="95"
-                                    class="link-to-prism">src/app/web.service.ts:95</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="168"
+                                    class="link-to-prism">src/app/web.service.ts:168</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Logout logged-in user</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -286,6 +302,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -300,6 +317,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The username to ban</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>token</td>
@@ -312,16 +333,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The token used to validate the request, must be admin</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -347,14 +373,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="54"
-                                    class="link-to-prism">src/app/web.service.ts:54</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="110"
+                                    class="link-to-prism">src/app/web.service.ts:110</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Delete a trivia</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -365,6 +393,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -379,6 +408,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>tId</td>
@@ -391,6 +424,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired trivia</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>token</td>
@@ -403,16 +440,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The authentication token used to validate the request. Must be OP or admin</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -438,14 +480,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="32"
-                                    class="link-to-prism">src/app/web.service.ts:32</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="75"
+                                    class="link-to-prism">src/app/web.service.ts:75</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Edit an existing trivia</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -456,6 +500,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -470,6 +515,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>tId</td>
@@ -482,6 +531,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired trivia</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>trivia</td>
@@ -494,6 +547,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form holding the updated trivia data</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>token</td>
@@ -506,16 +563,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The authentication token used to validate the request</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -541,14 +603,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="13"
-                                    class="link-to-prism">src/app/web.service.ts:13</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="36"
+                                    class="link-to-prism">src/app/web.service.ts:36</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Fetch one episodes</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -559,6 +623,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -573,16 +638,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An Observable of the specified episode</p>
+
                             </div>
                 </td>
             </tr>
@@ -608,19 +678,25 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="8"
-                                    class="link-to-prism">src/app/web.service.ts:8</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="27"
+                                    class="link-to-prism">src/app/web.service.ts:27</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Fetch all episodes</p>
+</div>
 
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
+                            <div class="io-description">
+                                <p>An Observable of all episodes</p>
+
+                            </div>
                 </td>
             </tr>
         </tbody>
@@ -645,14 +721,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="17"
-                                    class="link-to-prism">src/app/web.service.ts:17</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="45"
+                                    class="link-to-prism">src/app/web.service.ts:45</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Fetch all trivias for an episode</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -663,6 +741,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -677,16 +756,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An Observable of the trivias associated with an episode</p>
+
                             </div>
                 </td>
             </tr>
@@ -712,14 +796,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="74"
-                                    class="link-to-prism">src/app/web.service.ts:74</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="138"
+                                    class="link-to-prism">src/app/web.service.ts:138</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Login as an existing user</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -730,6 +816,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -744,16 +831,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form holding the data of the users login details</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>A JSON object holding an x-access-token as well as username, name and admin status</p>
+
                             </div>
                 </td>
             </tr>
@@ -779,14 +871,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="85"
-                                    class="link-to-prism">src/app/web.service.ts:85</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="153"
+                                    class="link-to-prism">src/app/web.service.ts:153</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Logout logged-in user</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -797,6 +891,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -811,16 +906,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The token to log out and discard</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -846,14 +946,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="21"
-                                    class="link-to-prism">src/app/web.service.ts:21</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="56"
+                                    class="link-to-prism">src/app/web.service.ts:56</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Post a new trivia to an episode</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -864,6 +966,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -878,6 +981,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>trivia</td>
@@ -890,6 +997,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form holding the trivia data to be added</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>token</td>
@@ -902,16 +1013,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The token used to validate the request</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -937,14 +1053,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="64"
-                                    class="link-to-prism">src/app/web.service.ts:64</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="124"
+                                    class="link-to-prism">src/app/web.service.ts:124</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Register a new user</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -955,6 +1073,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -969,16 +1088,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The form holding the data of the new user</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -1004,14 +1128,16 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="44"
-                                    class="link-to-prism">src/app/web.service.ts:44</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="94"
+                                    class="link-to-prism">src/app/web.service.ts:94</a></div>
                         </td>
                     </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                        <div class="io-description"><p>Vote on trivia</p>
+</div>
 
                             <div class="io-description">
                                 <b>Parameters :</b>
@@ -1022,6 +1148,7 @@
                                             <td>Name</td>
                                                 <td>Type</td>
                                             <td>Optional</td>
+                                                <td>Description</td>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -1036,6 +1163,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired episode</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>tId</td>
@@ -1048,6 +1179,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The id of the desired trivia</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>voteDirection</td>
@@ -1060,6 +1195,10 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The vote direction, either up or down</p>
+
+                                            </td>
                                         </tr>
                                         <tr>
                                                 <td>token</td>
@@ -1072,16 +1211,21 @@
                                             </td>
 
 
+                                            <td>
+                                                    <p>The authentication token used to validate the request</p>
+
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         <div class="io-description">
-                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
 
                         </div>
                             <div class="io-description">
-                                
+                                <p>An http code used to determine if the request was successful or not</p>
+
                             </div>
                 </td>
             </tr>
@@ -1117,10 +1261,17 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/web.service.ts:6</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/web.service.ts:14</a></div>
                         </td>
                     </tr>
 
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The page size to return. This app pulls all records and handles pagination on the front end
+for the purposes of speed</p>
+</div>
+                </td>
+            </tr>
 
         </tbody>
     </table>
@@ -1132,25 +1283,60 @@
     <div class="tab-pane fade  tab-source-code" id="source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {HttpClient, HttpHeaders} from &quot;@angular/common/http&quot;;
 import { Injectable } from &quot;@angular/core&quot;;
+import {Observable} from &#x27;rxjs&#x27;;
 
+/**
+ * The WebService provides connections to the backend API
+ */
 @Injectable()
 export class WebService{
+  /**
+   * The page size to return. This app pulls all records and handles pagination on the front end
+   * for the purposes of speed
+   */
   pageSize: number &#x3D; 65
+
+  /**
+   * The constructor for the Web Service
+   * @constructor
+   * @param http Injecting the httpClient to the Web Service
+   */
   constructor(private http: HttpClient) { }
-  getEpisodes() {
+
+  /**
+   * Fetch all episodes
+   * @returns An Observable of all episodes
+   */
+  getEpisodes(): Observable&lt;any&gt; {
     return this.http.get&lt;any&gt;(
-      // pull all records, pagination handled on frontend
       &#x27;http://localhost:5000/api/v1.0/episodes?pn&#x3D;&#x27;+&#x27;&amp;ps&#x3D;&#x27; + this.pageSize);
   }
-  getEpisode(id: any) {
+  /**
+   * Fetch one episodes
+   * @param id The id of the desired episode
+   * @returns An Observable of the specified episode
+   */
+  getEpisode(id: any): Observable&lt;any&gt; {
     return this.http.get&lt;any&gt;(
       &#x27;http://localhost:5000/api/v1.0/episodes/&#x27; + id);
   }
-  getTrivias(id: any) {
+  /**
+   * Fetch all trivias for an episode
+   * @param id The id of the desired episode
+   * @returns An Observable of the trivias associated with an episode
+   */
+  getTrivias(id: any): Observable&lt;any&gt; {
     return this.http.get&lt;any&gt;(&#x27;http://localhost:5000/api/v1.0/episodes/&#x27; +
       id + &#x27;/trivias&#x27;);
   }
-  postTrivia(id: any, trivia: any, token:any) {
+  /**
+   * Post a new trivia to an episode
+   * @param id The id of the desired episode
+   * @param trivia The form holding the trivia data to be added
+   * @param token The token used to validate the request
+   * @returns An http code used to determine if the request was successful or not
+   */
+  postTrivia(id: any, trivia: any, token: any): Observable&lt;any&gt; {
       let postData &#x3D; new FormData();
       postData.append(&quot;text&quot;, trivia.trivia);
       const httpOptions &#x3D; {
@@ -1161,7 +1347,15 @@ export class WebService{
         &#x27;http://localhost:5000/api/v1.0/episodes/&#x27; +
         id + &quot;/trivias&quot;, postData, httpOptions);
     }
-  editTrivia(eId: any, tId: any, trivia: any, token:any) {
+  /**
+   * Edit an existing trivia
+   * @param eId The id of the desired episode
+   * @param tId The id of the desired trivia
+   * @param trivia The form holding the updated trivia data
+   * @param token The authentication token used to validate the request
+   * @returns An http code used to determine if the request was successful or not
+   */
+  editTrivia(eId: any, tId: any, trivia: any, token:any): Observable&lt;any&gt; {
     let postData &#x3D; new FormData();
     postData.append(&quot;text&quot;, trivia.editedTrivia);
     const httpOptions &#x3D; {
@@ -1172,8 +1366,15 @@ export class WebService{
       &#x27;http://localhost:5000/api/v1.0/episodes/&#x27; +
       eId + &quot;/trivias/&quot; + tId, postData, httpOptions);
   }
-
-  voteTrivia(eId: any, tId: any, voteDirection: string, token: any) {
+  /**
+   * Vote on trivia
+   * @param eId The id of the desired episode
+   * @param tId The id of the desired trivia
+   * @param voteDirection The vote direction, either up or down
+   * @param token The authentication token used to validate the request
+   * @returns An http code used to determine if the request was successful or not
+   */
+  voteTrivia(eId: any, tId: any, voteDirection: string, token: any): Observable&lt;any&gt; {
       const httpOptions &#x3D; {
         headers: new HttpHeaders({
           &#x27;x-access-token&#x27;: token })
@@ -1182,8 +1383,14 @@ export class WebService{
         &#x27;http://localhost:5000/api/v1.0/episodes/&#x27; + eId + &#x27;/trivias/&#x27; + tId + &#x27;/vote?vote&#x3D;&#x27; + voteDirection,
         &#x27;&#x27;, httpOptions )
   }
-
-  deleteTrivia(eId: any, tId: any, token:any) {
+  /**
+   * Delete a trivia
+   * @param eId The id of the desired episode
+   * @param tId The id of the desired trivia
+   * @param token The authentication token used to validate the request. Must be OP or admin
+   * @returns An http code used to determine if the request was successful or not
+   */
+  deleteTrivia(eId: any, tId: any, token:any): Observable&lt;any&gt; {
     const httpOptions &#x3D; {
       headers: new HttpHeaders({
         &#x27;x-access-token&#x27;: token })
@@ -1192,8 +1399,12 @@ export class WebService{
       &#x27;http://localhost:5000/api/v1.0/episodes/&#x27; + eId + &#x27;/trivias/&#x27; + tId,
       httpOptions )
   }
-
-  register(form: any) {
+  /**
+   * Register a new user
+   * @param form The form holding the data of the new user
+   * @returns An http code used to determine if the request was successful or not
+   */
+  register(form: any): Observable&lt;any&gt; {
     let postData &#x3D; new FormData();
     postData.append(&#x27;name&#x27;, form.name)
     postData.append(&#x27;username&#x27;, form.username)
@@ -1202,8 +1413,12 @@ export class WebService{
     return this.http.post&lt;any&gt;(
       &#x27;http://localhost:5000/api/v1.0/register&#x27;, postData);
   }
-
-  login(creds: any) {
+  /**
+   * Login as an existing user
+   * @param creds The form holding the data of the users login details
+   * @returns A JSON object holding an x-access-token as well as username, name and admin status
+   */
+  login(creds: any): Observable&lt;any&gt; {
     let authData &#x3D; &#x27;Basic &#x27; + btoa(creds.username + &#x27;:&#x27; + creds.password);
     const httpOptions &#x3D; {
       headers: new HttpHeaders({
@@ -1213,8 +1428,12 @@ export class WebService{
     return this.http.get&lt;any&gt;(&#x27;http://localhost:5000/api/v1.0/login&#x27;,
       httpOptions)
   }
-
-  logout(token: any) {
+  /**
+   * Logout logged-in user
+   * @param token The token to log out and discard
+   * @returns An http code used to determine if the request was successful or not
+   */
+  logout(token: any): Observable&lt;any&gt; {
     const httpOptions &#x3D; {
       headers: new HttpHeaders({
         &#x27;Content-Type&#x27;:  &#x27;application/json&#x27;,
@@ -1223,9 +1442,13 @@ export class WebService{
     return this.http.get&lt;any&gt;(&#x27;http://localhost:5000/api/v1.0/logout&#x27;,
       httpOptions)
   }
-
-  ban(username: any, token: any) {
-    console.log(token)
+  /**
+   * Logout logged-in user
+   * @param username The username to ban
+   * @param token The token used to validate the request, must be admin
+   * @returns An http code used to determine if the request was successful or not
+   */
+  ban(username: any, token: any): Observable&lt;any&gt; {
     const httpOptions &#x3D; {
       headers: new HttpHeaders({
         &#x27;x-access-token&#x27;: token })

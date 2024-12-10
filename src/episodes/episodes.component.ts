@@ -5,6 +5,10 @@ import { WebService } from '../app/web.service';
 import {AgGridAngular} from 'ag-grid-angular';
 import { ColDef, GridOptions } from 'ag-grid-community';
 
+/**
+ * All logic associated with the episodes page
+ * Get episodes, define the ag-grid
+ */
 @Component({
   selector: 'episodes',
   imports: [RouterModule, CommonModule, AgGridAngular],
@@ -14,9 +18,17 @@ import { ColDef, GridOptions } from 'ag-grid-community';
 })
 
 export class EpisodesComponent {
+  /**
+   * All episodes as returned by the API
+   */
   data: any;
+  /**
+   * Boolean to check if the page is loading
+   */
   episodes_loaded: boolean = false;
-
+  /**
+   * Ag-Grid headings definition
+   */
   headings: ColDef[] = [
     { field: 'title',
           filter: true,
@@ -29,7 +41,9 @@ export class EpisodesComponent {
           valueGetter: p => 'S' + p.data.seasonNumber + 'E' + p.data.episodeNumber,
           sortable: false }
   ]
-
+  /**
+   * Ag-Grid gridOptions definition
+   */
   gridOptions: GridOptions = {
     rowStyle: {cursor: 'pointer', backgroundColor: 'rgba(0,0,0,0.5)'},
     autoSizeStrategy: {type: 'fitProvidedWidth', width: 700},
@@ -43,17 +57,31 @@ export class EpisodesComponent {
       }
     }
   }
+
+  /**
+   * Constructor for the Episodes component
+   * @constructor
+   * @param webService Connect to the Web Service
+   * @param router Provide links to other pages
+   */
   constructor(private webService: WebService,
               private router: Router) {}
 
-  ngOnInit() {
+  /**
+   * On page load, get episodes
+   */
+  ngOnInit(): void {
     this.webService.getEpisodes()
       .subscribe((response) => {
         this.data = response['data']
         this.episodes_loaded = true;  })
   }
 
-  onRowClicked(event: any) {
+  /**
+   * On user clicking a row, go to the associated episode page
+   * @param event An event describing which row was clicked
+   */
+  onRowClicked(event: any): void {
     this.router.navigate(['/episodes/' + event.data._id])
   }
 }

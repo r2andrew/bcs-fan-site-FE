@@ -1,39 +1,50 @@
 import { Injectable } from '@angular/core';
-
 import { ModalComponent } from './modal.component';
-
+/**
+ * Interface with the modal component
+ */
 @Injectable({ providedIn: 'root' })
 export class ModalService {
+  /**
+   * An array to hold the Modals active in the DOM
+   * @private
+   */
   private modals: ModalComponent[] = [];
 
-  add(modal: ModalComponent) {
-    // ensure component has a unique id attribute
+  /**
+   * Add a form to the DOM
+   * @param modal The form to add
+   */
+  add(modal: ModalComponent): void {
     if (!modal.id || this.modals.find(x => x.id === modal.id)) {
       throw new Error('modal must have a unique id attribute');
     }
-
-    // add modal to array of active modals
     this.modals.push(modal);
   }
 
-  remove(modal: ModalComponent) {
-    // remove modal from array of active modals
+  /**
+   * Remove a form from the DOM
+   * @param modal The form to remove
+   */
+  remove(modal: ModalComponent): void {
     this.modals = this.modals.filter(x => x !== modal);
   }
 
-  open(id: string) {
-    // open modal specified by id
+  /**
+   * Display a form
+   * @param id The form to display
+   */
+  open(id: string): void {
     const modal = this.modals.find(x => x.id === id);
-
     if (!modal) {
       throw new Error(`modal '${id}' not found`);
     }
-
     modal.open();
   }
-
-  close() {
-    // close the modal that is currently open
+  /**
+   * Hide any open modals
+   */
+  close(): void {
     const modal = this.modals.find(x => x.isOpen);
     modal?.close();
   }
